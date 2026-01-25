@@ -124,6 +124,54 @@ i<!DOCTYPE html>
         background-attachment: scroll;
       }
     }
+  /* ===== Image handling ===== */
+.entry img{
+  width: 390px;            /* ~70% of 560px */
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+/* Lightbox overlay */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.lightbox img{
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  cursor: zoom-out;
+}
+
+/* ===== Jump buttons layout ===== */
+.jump{
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between; /* evenly distributed */
+  gap: 12px;
+}
+
+.jump a{
+  flex: 1;
+  text-align: center;
+}
+
+/* ===== Section headers ===== */
+h2{
+  margin-top: 36px;
+  font-size: 1.5rem;   /* increased */
+  font-weight: 650;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
   </style>
 </head>
 
@@ -172,7 +220,7 @@ i<!DOCTYPE html>
 
   <!-- Image -->
   <div style="margin:14px 0 16px;">
-    <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
+    
       <img
         src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanPCA.png"
         alt="PCA plot from the Iceman genome study"
@@ -183,7 +231,7 @@ i<!DOCTYPE html>
           border:1px solid rgba(0,0,0,0.15);
           display:block;
         ">
-    </a>
+   
   </div>
 
   <!-- Authors -->
@@ -1039,6 +1087,28 @@ i<!DOCTYPE html>
 </div>
 
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <img src="" alt="">
+</div>
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = lightbox.querySelector("img");
+
+  document.querySelectorAll(".entry img").forEach(img => {
+    if (img.getAttribute("src")) {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    }
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  });
+</script>
 
 </body>
 </html>
