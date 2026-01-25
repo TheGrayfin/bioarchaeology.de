@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>t7 – Bioarchaeology</title>
+  <title>t8 – Bioarchaeology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Prevent indexing while under construction -->
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
-  <meta name="description" content="Academic profile of t7, bioarchaeology">
+  <meta name="description" content="Academic profile of t8, bioarchaeology">
 
   <style>
     :root{
@@ -18,7 +18,7 @@
       --line: #d7e3df;
       --accent: #2f7f6f;
       --panel-bg: #ffffff;
-      --shadow: 0 14px 32px rgba(0,0,0,.12);
+      --shadow: 0 12px 28px rgba(0,0,0,.15);
       --radius: 16px;
     }
 
@@ -31,16 +31,14 @@
       color: var(--ink);
       line-height: 1.65;
 
-      /* Background image via raw GitHub URL + strong fade */
-      background:
-        linear-gradient(
-          rgba(245,248,247,0.94),
-          rgba(245,248,247,0.94)
-        ),
-        url("https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/refs/heads/main/background1.png")
-        no-repeat center center fixed;
+      /* Clean background image, no overlays */
+      background-image: url("https://thegrayfin.github.io/bioarchaeology.de/background1.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      background-attachment: fixed;
 
-      background-size: cover;
+      background-color: #f5f7f6; /* fallback */
     }
 
     a{
@@ -52,11 +50,11 @@
     .wrap{
       max-width: 980px;
       margin: 0 auto;
-      padding: 48px 22px 72px;
+      padding: 60px 22px 80px;
     }
 
     .panel{
-      background: var(--panel-bg);
+      background: rgba(255,255,255,0.96);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -124,6 +122,12 @@
       color: var(--muted);
     }
 
+    @media (max-width: 900px){
+      body{
+        background-size: cover;
+      }
+    }
+
     @media (max-width: 720px){
       header h1{ font-size: 1.7rem; }
       .panel{ padding: 24px; }
@@ -137,7 +141,7 @@
     <div class="panel">
 
       <header>
-        <h1>t7</h1>
+        <h1>t8</h1>
         <p>Bioarchaeology and Life Sciences</p>
 
         <div class="fields">
@@ -176,28 +180,9 @@
         </p>
 
         <h2>Publications</h2>
-
         <p class="entry">
           Graefen, A., Alt, K.W. (2010).
           <em>Mummification today – a very normal affair</em>.
-          Anthropologischer Anzeiger.
-        </p>
-
-        <p class="entry">
-          Graefen, A., Unterländer, M., Parzinger, H., Burger, J. (2009).
-          <em>Multiplex-PCR as a tool for assessing ancient DNA preservation levels in human remains prior to next-generation sequencing</em>.
-          Anthropologischer Anzeiger.
-        </p>
-
-        <p class="entry">
-          Graefen, A., Piombino-Mascali, D., Gostner, P., Zink, A.R. (2009).
-          <em>Perspectives of palaeo-oncology, illustrated by a rare case of metastasising carcinoma from Northern Italy</em>.
-          International Journal of Osteoarchaeology.
-        </p>
-
-        <p class="entry">
-          Graefen, A., Alt, K.W. (2007).
-          <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>.
           Anthropologischer Anzeiger.
         </p>
 
