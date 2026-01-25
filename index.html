@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Dr. rer. nat. Angela Graefen – Bioarchaeology</title>
+  <title>Test1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Prevent indexing while under construction -->
@@ -13,14 +13,14 @@
 
   <style>
     :root{
-      --bg-main: #f3f7f5;
+      --bg-main: #eef4f2;
       --bg-panel: #ffffff;
       --ink: #102a27;
       --muted: #4b6b66;
-      --line: #dfe8e5;
+      --line: #d7e3df;
       --accent: #2f7f6f;
       --accent-soft: rgba(47,127,111,.08);
-      --shadow: 0 10px 28px rgba(0,0,0,.08);
+      --shadow: 0 12px 28px rgba(0,0,0,.08);
       --radius: 16px;
     }
 
@@ -31,17 +31,19 @@
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
                    Roboto, Helvetica, Arial;
       color: var(--ink);
+      line-height: 1.65;
+
+      /* visible but calm texture */
       background:
-        linear-gradient(180deg, rgba(47,127,111,.08), transparent 240px),
+        linear-gradient(180deg, rgba(47,127,111,.10), transparent 280px),
         repeating-linear-gradient(
-          45deg,
-          rgba(0,0,0,.015),
-          rgba(0,0,0,.015) 1px,
-          transparent 1px,
-          transparent 6px
+          -45deg,
+          rgba(0,0,0,.025),
+          rgba(0,0,0,.025) 2px,
+          transparent 2px,
+          transparent 14px
         ),
         var(--bg-main);
-      line-height: 1.65;
     }
 
     a{
@@ -53,20 +55,20 @@
     .wrap{
       max-width: 980px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
+      padding: 36px 22px 64px;
     }
 
     /* Header */
     header{
       background:
         linear-gradient(135deg,
-          rgba(47,127,111,.12),
-          rgba(47,127,111,.03)
+          rgba(47,127,111,.16),
+          rgba(47,127,111,.04)
         );
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 28px 26px;
+      padding: 30px 28px;
     }
 
     header h1{
@@ -77,13 +79,13 @@
     }
 
     header p{
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
       color: var(--muted);
-      max-width: 720px;
+      max-width: 760px;
     }
 
     .fields{
-      margin-top: 14px;
+      margin-top: 16px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -94,47 +96,46 @@
       padding: 6px 12px;
       border-radius: 999px;
       background: var(--accent-soft);
-      border: 1px solid rgba(47,127,111,.18);
+      border: 1px solid rgba(47,127,111,.2);
       color: #1f4d46;
       white-space: nowrap;
     }
 
     /* Main content */
     main{
-      margin-top: 24px;
+      margin-top: 28px;
       background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 22px 24px 28px;
+      padding: 26px 30px 32px;
     }
 
     h2{
-      margin-top: 26px;
+      margin-top: 30px;
       font-size: 1.2rem;
       font-weight: 600;
       border-bottom: 1px solid var(--line);
-      padding-bottom: 4px;
+      padding-bottom: 6px;
     }
 
     p{
-      margin: 0.7rem 0;
+      margin: 0.8rem 0;
     }
 
     .entry{
-      margin: 12px 0;
-      padding-left: 14px;
-      border-left: 3px solid var(--accent);
+      margin: 14px 0;
     }
 
     footer{
-      margin-top: 24px;
+      margin-top: 28px;
       font-size: 0.9rem;
       color: var(--muted);
     }
 
     @media (max-width: 720px){
       header h1{ font-size: 1.7rem; }
+      main{ padding: 22px; }
     }
   </style>
 </head>
@@ -153,8 +154,8 @@
         <span class="field">Ancient DNA</span>
       </div>
 
-      <p style="margin-top:14px;">
-        Academic profile presenting doctoral research, publications, invited talks,
+      <p style="margin-top:16px;">
+        Academic profile presenting doctoral research, publications, talks,
         and contact information.
       </p>
     </header>
@@ -171,7 +172,7 @@
       </p>
 
       <h2>PhD Thesis</h2>
-      <div class="entry">
+      <p class="entry">
         Graefen, A. (2020).
         <em>Population genetic analysis of Neolithic to Bronze Age human remains from
         Trentino–Alto Adige (Northern Italy)</em>.
@@ -179,38 +180,38 @@
         <a href="https://openscience.ub.uni-mainz.de/items/bbb094b5-1003-4c10-bcaf-c203b8d1bc25">Record</a>
         ·
         <a href="https://openscience.ub.uni-mainz.de/bitstreams/1f74f213-b8a9-40db-836f-947f5649a34a/download">PDF</a>
-      </div>
+      </p>
 
       <h2>Publications</h2>
 
-      <div class="entry">
+      <p class="entry">
         Graefen, A., Alt, K.W. (2010).
         <em>Mummification today – a very normal affair</em>.
         Anthropologischer Anzeiger.
-      </div>
+      </p>
 
-      <div class="entry">
+      <p class="entry">
         Graefen, A., Unterländer, M., Parzinger, H., Burger, J. (2009).
         <em>Multiplex-PCR as a tool for assessing ancient DNA preservation levels in human remains prior to next-generation sequencing</em>.
         Anthropologischer Anzeiger.
-      </div>
+      </p>
 
-      <div class="entry">
+      <p class="entry">
         Graefen, A., Piombino-Mascali, D., Gostner, P., Zink, A.R. (2009).
         <em>Perspectives of palaeo-oncology, illustrated by a rare case of metastasising carcinoma from Northern Italy</em>.
         International Journal of Osteoarchaeology.
-      </div>
+      </p>
 
-      <div class="entry">
+      <p class="entry">
         Graefen, A., Alt, K.W. (2007).
         <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>.
         Anthropologischer Anzeiger.
-      </div>
+      </p>
 
       <h2>Talks</h2>
       <p>
-        Invited and conference talks in bioarchaeology, palaeopathology, and
-        ancient DNA research. Detailed list in preparation.
+        Invited and conference talks in bioarchaeology, palaeopathology,
+        and ancient DNA research. Detailed list in preparation.
       </p>
 
       <h2>Contact</h2>
