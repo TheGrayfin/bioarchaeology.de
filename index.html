@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>t3 – Bioarchaeology</title>
+  <title>t5 – Bioarchaeology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Prevent indexing while under construction -->
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
-  <meta name="description" content="Academic profile of t3, bioarchaeology">
+  <meta name="description" content="Academic profile of t5, bioarchaeology">
 
   <style>
     :root{
-      --bg-main: #eef4f2;
-      --bg-panel: #ffffff;
       --ink: #102a27;
       --muted: #4b6b66;
       --line: #d7e3df;
       --accent: #2f7f6f;
-      --accent-soft: rgba(47,127,111,.08);
-      --shadow: 0 12px 28px rgba(0,0,0,.08);
+      --panel-bg: #ffffff;
+      --shadow: 0 14px 32px rgba(0,0,0,.12);
       --radius: 16px;
     }
 
@@ -33,17 +31,14 @@
       color: var(--ink);
       line-height: 1.65;
 
-      /* visible but calm page texture */
+      /* Background image with soft fade */
       background:
-        linear-gradient(180deg, rgba(47,127,111,.08), transparent 300px),
-        repeating-linear-gradient(
-          -45deg,
-          rgba(0,0,0,.025),
-          rgba(0,0,0,.025) 2px,
-          transparent 2px,
-          transparent 14px
+        linear-gradient(
+          rgba(245,248,247,0.94),
+          rgba(245,248,247,0.94)
         ),
-        var(--bg-main);
+        url("background1.png") no-repeat center center fixed;
+      background-size: cover;
     }
 
     a{
@@ -55,21 +50,20 @@
     .wrap{
       max-width: 980px;
       margin: 0 auto;
-      padding: 36px 22px 64px;
+      padding: 48px 22px 72px;
     }
 
-    /* Unified content panel (header + main) */
     .panel{
-      background: var(--bg-panel);
+      background: var(--panel-bg);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 30px 32px 34px;
+      padding: 34px 36px 38px;
     }
 
     header{
-      padding-bottom: 22px;
       border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
     }
 
     header h1{
@@ -96,7 +90,7 @@
       font-size: 0.95rem;
       padding: 6px 12px;
       border-radius: 999px;
-      background: var(--accent-soft);
+      background: rgba(47,127,111,.08);
       border: 1px solid rgba(47,127,111,.2);
       color: #1f4d46;
       white-space: nowrap;
@@ -107,7 +101,7 @@
     }
 
     h2{
-      margin-top: 30px;
+      margin-top: 32px;
       font-size: 1.2rem;
       font-weight: 600;
       border-bottom: 1px solid var(--line);
@@ -123,14 +117,14 @@
     }
 
     footer{
-      margin-top: 28px;
+      margin-top: 30px;
       font-size: 0.9rem;
       color: var(--muted);
     }
 
     @media (max-width: 720px){
       header h1{ font-size: 1.7rem; }
-      .panel{ padding: 22px; }
+      .panel{ padding: 24px; }
     }
   </style>
 </head>
@@ -141,7 +135,7 @@
     <div class="panel">
 
       <header>
-        <h1>t3</h1>
+        <h1>t5</h1>
         <p>Bioarchaeology and Life Sciences</p>
 
         <div class="fields">
