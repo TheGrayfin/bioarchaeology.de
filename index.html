@@ -9,13 +9,13 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
-  <meta name="description" content="Academic profile of yyy, bioarchaeology">
+  <meta name="description" content="Academic profile of Dr. rer. nat. Angela Graefen, bioarchaeology">
 
   <style>
     :root{
       --ink: #0f2320;
       --muted: #3f5f59;
-      --line: rgba(34, 90, 82, 0.18);
+      --line: rgba(0, 0, 0, 0.15);
       --accent: #2f7f6f;
 
       --panel-bg: rgba(233, 244, 242, 0.90);
@@ -63,7 +63,7 @@
     }
 
     header{
-      border-bottom: 1px solid rgba(34, 90, 82, 0.18);
+      border-bottom: 1px solid var(--line);
       padding-bottom: 22px;
     }
 
@@ -84,17 +84,25 @@
       margin-top: 32px;
       font-size: 1.2rem;
       font-weight: 650;
-      border-bottom: 1px solid rgba(34, 90, 82, 0.18);
+      border-bottom: 1px solid var(--line);
       padding-bottom: 6px;
     }
 
+    /* Publication cards */
     .entry{
-  margin: 18px 0;
-  padding: 16px 18px;
-  border: 1px solid rgba(34, 90, 82, 0.18);
-  border-radius: 12px;
-  background: rgba(233, 244, 242, 0.55); /* very subtle */
-}
+      margin: 20px 0;
+      padding: 18px 20px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 12px;
+      background: rgba(245, 245, 245, 0.95); /* light grey */
+    }
+
+    @media (max-width: 900px){
+      body{
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+      }
     }
   </style>
 </head>
@@ -112,14 +120,13 @@
 
 <h2>Publications</h2>
 
-<p class="entry">
+<div class="entry">
   Graefen, A., Alt, K.W. (2010).
   <em>Mummification today – a very normal affair</em>.
   Anthropologischer Anzeiger.
-</p>
+</div>
 
-<!-- ===== FEATURED PUBLICATION WITH IMAGE ===== -->
-<p class="entry">
+<div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.15em;">
@@ -129,7 +136,7 @@
   </span>
 
   <!-- Image -->
-  <div style="margin:12px 0 14px;">
+  <div style="margin:14px 0 16px;">
     <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
       <img
         src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanPCA.png"
@@ -173,17 +180,16 @@
     <sup>*</sup>Equal contribution as first authors.
   </span>
 
-</p>
-<!-- ===== END FEATURED PUBLICATION ===== -->
+</div>
 
-<p class="entry">
+<div class="entry">
   Gostner, P., Pernter, P., Bonatti, G., <strong>Graefen, A.</strong>,
   Zink, A.R., Pernter, E., & Pernter, P. (2011).
   <strong>New radiological insights into the life and death of the Tyrolean Iceman</strong>.
   <a href="https://doi.org/10.1016/j.jas.2011.08.003" target="_blank">
     Journal of Archaeological Science, 38, 3425–3431
   </a>.
-</p>
+</div>
 
 <h2>Contact</h2>
 <p>Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a></p>
