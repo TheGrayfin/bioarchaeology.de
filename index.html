@@ -18,8 +18,7 @@
       --line: rgba(34, 90, 82, 0.18);
       --accent: #2f7f6f;
 
-      /* Panel look: very light teal + transparency */
-      --panel-bg: rgba(233, 244, 242, 0.90); /* subtle teal tint */
+      --panel-bg: rgba(233, 244, 242, 0.90);
       --shadow: 0 14px 34px rgba(0,0,0,.18);
       --radius: 16px;
     }
@@ -33,14 +32,13 @@
       color: var(--ink);
       line-height: 1.65;
 
-      /* Full-width background (no side gaps) */
       background-image: url("https://thegrayfin.github.io/bioarchaeology.de/background1.png");
       background-repeat: no-repeat;
       background-position: top center;
-      background-size: 100% auto;   /* <-- fills screen width */
+      background-size: 100% auto;
       background-attachment: fixed;
 
-      background-color: #f3f7f6; /* fallback under the image */
+      background-color: #f3f7f6;
     }
 
     a{
@@ -60,11 +58,8 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-
-      /* Makes text readable even with transparency */
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
-
       padding: 34px 36px 38px;
     }
 
@@ -77,35 +72,14 @@
       margin: 0 0 6px;
       font-size: 2rem;
       font-weight: 650;
-      letter-spacing: -0.02em;
     }
 
     header p{
       margin: 0.3rem 0;
       color: var(--muted);
-      max-width: 760px;
     }
 
-    .fields{
-      margin-top: 14px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .field{
-      font-size: 0.95rem;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(47,127,111,.10);
-      border: 1px solid rgba(47,127,111,.22);
-      color: #1f4d46;
-      white-space: nowrap;
-    }
-
-    main{
-      margin-top: 22px;
-    }
+    main{ margin-top: 22px; }
 
     h2{
       margin-top: 32px;
@@ -115,161 +89,103 @@
       padding-bottom: 6px;
     }
 
-    p{
-      margin: 0.8rem 0;
+    .entry{ margin: 14px 0; }
+
+    /* === NEW: publication with figure === */
+    .pub-with-fig{
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
     }
 
-    .entry{
-      margin: 14px 0;
+    .pub-text{
+      flex: 1;
+      min-width: 0;
     }
 
-    footer{
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: var(--muted);
+    .pub-fig{
+      width: 180px;
+      flex: 0 0 180px;
     }
 
-    /* On very tall/wide screens the image can look stretched;
-       allow it to behave more naturally */
-    @media (min-width: 1400px){
-      body{ background-size: 100% auto; }
+    .pub-fig img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.15);
+      display: block;
     }
 
-    /* On small screens, cover often looks nicer */
-    @media (max-width: 900px){
-      body{
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
+    @media (max-width: 800px){
+      .pub-with-fig{
+        flex-direction: column;
       }
-      .wrap{
-        padding-top: 30px;
+      .pub-fig{
+        width: 100%;
+        max-width: 320px;
       }
-    }
-
-    @media (max-width: 720px){
-      header h1{ font-size: 1.7rem; }
-      .panel{ padding: 24px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="panel">
+<div class="wrap">
+<div class="panel">
 
-      <header>
-        <h1>t9</h1>
-        <p>Bioarchaeology and Life Sciences</p>
+<header>
+  <h1>t9</h1>
+  <p>Bioarchaeology and Life Sciences</p>
+</header>
 
-        <div class="fields">
-          <span class="field">Bioarchaeology</span>
-          <span class="field">Human Osteology</span>
-          <span class="field">Paleopathology</span>
-          <span class="field">Ancient DNA</span>
-        </div>
+<main>
 
-        <p style="margin-top:14px;">
-          Academic profile presenting doctoral research, publications, talks,
-          and contact information.
-        </p>
-      </header>
+<h2>Publications</h2>
 
-      <main>
+<!-- Publication WITH figure -->
+<div class="entry pub-with-fig">
 
-        <h2>About</h2>
-        <p>
-          Bioarchaeologist with a research focus on human osteology, paleopathology,
-          and population genetics. Research interests include the reconstruction of
-          health and disease in past populations, skeletal stress markers, and
-          interdisciplinary approaches combining osteological, radiological,
-          and molecular methods.
-        </p>
-
-        <h2>PhD Thesis</h2>
-        <p class="entry">
-          Graefen, A. (2020).
-          <em>Population genetic analysis of Neolithic to Bronze Age human remains from
-          Trentino–Alto Adige (Northern Italy)</em>.
-          Doctoral thesis, Johannes Gutenberg-Universität Mainz.
-          <a href="https://openscience.ub.uni-mainz.de/items/bbb094b5-1003-4c10-bcaf-c203b8d1bc25">Record</a>
-          ·
-          <a href="https://openscience.ub.uni-mainz.de/bitstreams/1f74f213-b8a9-40db-836f-947f5649a34a/download">PDF</a>
-        </p>
-
-        <h2>Publications</h2>
-        <p class="entry">
-          Graefen, A., Alt, K.W. (2010).
-          <em>Mummification today – a very normal affair</em>.
-          Anthropologischer Anzeiger.
-        </p>
-<p class="entry">
-  Andreas Keller,<sup>*</sup>
-  <span style="font-weight:600;">Angela Graefen</span>,<sup>*</sup>
-  Markus Ball,<sup>*</sup>
-  Mark Matzas, Valesca Boisguerin, Frank Maixner, Petra Leidinger,
-  Christina Backes, Rabab Khairat, Michael Forster, Björn Stade,
-  Andre Franke, Jens Mayer, Jessica Spangler, Stephen McLaughlin,
-  Minita Shah, Clarence Lee, Timothy Harkins, Alexander Sartori,
-  Andres Moreno-Estrada, Brenna Henn, Martin Sikora, Ornella Semino,
-  Jacques Chiaroni, Siiri Rootsi, Natalie Myres, Vicente Cabrera,
-  Peter Underhill, Carlos Bustamante, Eduard Egarter Vigl,
-  Marco Samadelli, Giovanna Cipollini, Jan Haas, Hugo Katus,
-  Brian O’Connor, Marc Carlson, Benjamin Meder, Nikolaus Blin,
-  Eckart Meese, Carsten Pusch & Albert Zink (2012).
-  <br>
-  <span style="font-size:1.05em;">
-    <strong>
-      New insights into the Tyrolean Iceman’s origin and phenotype as inferred by whole-genome sequencing
-    </strong>
-  </span>
-  <br>
-  <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
-    Nature Communications, 3, 1701
-  </a>
-  <br>
-  <span style="font-size:0.85em; font-style:italic;">
-    <sup>*</sup>Equal contribution as first authors.
-  </span>
-</p>
-
-
-
-
-        <p class="entry">
-  Gostner, P., Pernter, P., Bonatti, G., <strong>Graefen, A.</strong>, Zink, A.R., 
-  Pernter, E., & Pernter, P. (2011).
-  <strong>New radiological insights into the life and death of the Tyrolean Iceman</strong>.
-  <a href="https://doi.org/10.1016/j.jas.2011.08.003" target="_blank">
-    Journal of Archaeological Science, 38, 3425–3431
-  </a>.
-</p>
-
-
-
-
-        <h2>Talks</h2>
-        <p>
-          Invited and conference talks in bioarchaeology, palaeopathology,
-          and ancient DNA research. Detailed list in preparation.
-        </p>
-
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a>
-        </p>
-
-        <footer>
-          © <span id="y"></span> bioarchaeology.de
-        </footer>
-
-      </main>
-
-    </div>
+  <div class="pub-text">
+    Andreas Keller,<sup>*</sup>
+    <span style="font-weight:600;">Angela Graefen</span>,<sup>*</sup>
+    Markus Ball,<sup>*</sup>
+    Mark Matzas, Valesca Boisguerin, Frank Maixner, Petra Leidinger,
+    Christina Backes, Rabab Khairat, Michael Forster, Björn Stade,
+    Andre Franke, Jens Mayer, Jessica Spangler, Stephen McLaughlin,
+    Minita Shah, Clarence Lee, Timothy Harkins, Alexander Sartori,
+    Andres Moreno-Estrada, Brenna Henn, Martin Sikora, Ornella Semino,
+    Jacques Chiaroni, Siiri Rootsi, Natalie Myres, Vicente Cabrera,
+    Peter Underhill, Carlos Bustamante, Eduard Egarter Vigl,
+    Marco Samadelli, Giovanna Cipollini, Jan Haas, Hugo Katus,
+    Brian O’Connor, Marc Carlson, Benjamin Meder, Nikolaus Blin,
+    Eckart Meese, Carsten Pusch & Albert Zink (2012).
+    <br>
+    <span style="font-size:1.05em;">
+      <strong>
+        New insights into the Tyrolean Iceman’s origin and phenotype as inferred by whole-genome sequencing
+      </strong>
+    </span>
+    <br>
+    <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
+      Nature Communications, 3, 1701
+    </a>
+    <br>
+    <span style="font-size:0.85em; font-style:italic;">
+      <sup>*</sup>Equal contribution as first authors.
+    </span>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <div class="pub-fig">
+    <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
+      <img src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanPCA.png"
+           alt="PCA plot from Iceman genome study">
+    </a>
+  </div>
+
+</div>
+
+</main>
+
+</div>
+</div>
 </body>
 </html>
