@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>T2 – Bioarchaeology</title>
+  <title>t3 – Bioarchaeology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Prevent indexing while under construction -->
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
-  <meta name="description" content="Academic profile of t2, bioarchaeology">
+  <meta name="description" content="Academic profile of t3, bioarchaeology">
 
   <style>
     :root{
@@ -33,9 +33,9 @@
       color: var(--ink);
       line-height: 1.65;
 
-      /* visible but calm page texture (NOT in header) */
+      /* visible but calm page texture */
       background:
-        linear-gradient(180deg, rgba(47,127,111,.10), transparent 280px),
+        linear-gradient(180deg, rgba(47,127,111,.08), transparent 300px),
         repeating-linear-gradient(
           -45deg,
           rgba(0,0,0,.025),
@@ -58,17 +58,18 @@
       padding: 36px 22px 64px;
     }
 
-    /* Header (clean, no texture) */
-    header{
-      background:
-        linear-gradient(135deg,
-          rgba(47,127,111,.14),
-          rgba(47,127,111,.04)
-        );
+    /* Unified content panel (header + main) */
+    .panel{
+      background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 32px 30px;
+      padding: 30px 32px 34px;
+    }
+
+    header{
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
     }
 
     header h1{
@@ -76,7 +77,6 @@
       font-size: 2rem;
       font-weight: 600;
       letter-spacing: -0.02em;
-      background: none; /* ensure no highlighting */
     }
 
     header p{
@@ -86,7 +86,7 @@
     }
 
     .fields{
-      margin-top: 16px;
+      margin-top: 14px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -102,14 +102,8 @@
       white-space: nowrap;
     }
 
-    /* Main content */
     main{
-      margin-top: 28px;
-      background: var(--bg-panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 26px 30px 32px;
+      margin-top: 22px;
     }
 
     h2{
@@ -136,7 +130,7 @@
 
     @media (max-width: 720px){
       header h1{ font-size: 1.7rem; }
-      main{ padding: 22px; }
+      .panel{ padding: 22px; }
     }
   </style>
 </head>
@@ -144,87 +138,91 @@
 <body>
   <div class="wrap">
 
-    <header>
-      <h1>Dr. rer. nat. Angela Graefen</h1>
-      <p>Bioarchaeology and Life Sciences</p>
+    <div class="panel">
 
-      <div class="fields">
-        <span class="field">Bioarchaeology</span>
-        <span class="field">Human Osteology</span>
-        <span class="field">Paleopathology</span>
-        <span class="field">Ancient DNA</span>
-      </div>
+      <header>
+        <h1>t3</h1>
+        <p>Bioarchaeology and Life Sciences</p>
 
-      <p style="margin-top:16px;">
-        Academic profile presenting doctoral research, publications, talks,
-        and contact information.
-      </p>
-    </header>
+        <div class="fields">
+          <span class="field">Bioarchaeology</span>
+          <span class="field">Human Osteology</span>
+          <span class="field">Paleopathology</span>
+          <span class="field">Ancient DNA</span>
+        </div>
 
-    <main>
+        <p style="margin-top:14px;">
+          Academic profile presenting doctoral research, publications, talks,
+          and contact information.
+        </p>
+      </header>
 
-      <h2>About</h2>
-      <p>
-        Bioarchaeologist with a research focus on human osteology, paleopathology,
-        and population genetics. Research interests include the reconstruction of
-        health and disease in past populations, skeletal stress markers, and
-        interdisciplinary approaches combining osteological, radiological,
-        and molecular methods.
-      </p>
+      <main>
 
-      <h2>PhD Thesis</h2>
-      <p class="entry">
-        Graefen, A. (2020).
-        <em>Population genetic analysis of Neolithic to Bronze Age human remains from
-        Trentino–Alto Adige (Northern Italy)</em>.
-        Doctoral thesis, Johannes Gutenberg-Universität Mainz.
-        <a href="https://openscience.ub.uni-mainz.de/items/bbb094b5-1003-4c10-bcaf-c203b8d1bc25">Record</a>
-        ·
-        <a href="https://openscience.ub.uni-mainz.de/bitstreams/1f74f213-b8a9-40db-836f-947f5649a34a/download">PDF</a>
-      </p>
+        <h2>About</h2>
+        <p>
+          Bioarchaeologist with a research focus on human osteology, paleopathology,
+          and population genetics. Research interests include the reconstruction of
+          health and disease in past populations, skeletal stress markers, and
+          interdisciplinary approaches combining osteological, radiological,
+          and molecular methods.
+        </p>
 
-      <h2>Publications</h2>
+        <h2>PhD Thesis</h2>
+        <p class="entry">
+          Graefen, A. (2020).
+          <em>Population genetic analysis of Neolithic to Bronze Age human remains from
+          Trentino–Alto Adige (Northern Italy)</em>.
+          Doctoral thesis, Johannes Gutenberg-Universität Mainz.
+          <a href="https://openscience.ub.uni-mainz.de/items/bbb094b5-1003-4c10-bcaf-c203b8d1bc25">Record</a>
+          ·
+          <a href="https://openscience.ub.uni-mainz.de/bitstreams/1f74f213-b8a9-40db-836f-947f5649a34a/download">PDF</a>
+        </p>
 
-      <p class="entry">
-        Graefen, A., Alt, K.W. (2010).
-        <em>Mummification today – a very normal affair</em>.
-        Anthropologischer Anzeiger.
-      </p>
+        <h2>Publications</h2>
 
-      <p class="entry">
-        Graefen, A., Unterländer, M., Parzinger, H., Burger, J. (2009).
-        <em>Multiplex-PCR as a tool for assessing ancient DNA preservation levels in human remains prior to next-generation sequencing</em>.
-        Anthropologischer Anzeiger.
-      </p>
+        <p class="entry">
+          Graefen, A., Alt, K.W. (2010).
+          <em>Mummification today – a very normal affair</em>.
+          Anthropologischer Anzeiger.
+        </p>
 
-      <p class="entry">
-        Graefen, A., Piombino-Mascali, D., Gostner, P., Zink, A.R. (2009).
-        <em>Perspectives of palaeo-oncology, illustrated by a rare case of metastasising carcinoma from Northern Italy</em>.
-        International Journal of Osteoarchaeology.
-      </p>
+        <p class="entry">
+          Graefen, A., Unterländer, M., Parzinger, H., Burger, J. (2009).
+          <em>Multiplex-PCR as a tool for assessing ancient DNA preservation levels in human remains prior to next-generation sequencing</em>.
+          Anthropologischer Anzeiger.
+        </p>
 
-      <p class="entry">
-        Graefen, A., Alt, K.W. (2007).
-        <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>.
-        Anthropologischer Anzeiger.
-      </p>
+        <p class="entry">
+          Graefen, A., Piombino-Mascali, D., Gostner, P., Zink, A.R. (2009).
+          <em>Perspectives of palaeo-oncology, illustrated by a rare case of metastasising carcinoma from Northern Italy</em>.
+          International Journal of Osteoarchaeology.
+        </p>
 
-      <h2>Talks</h2>
-      <p>
-        Invited and conference talks in bioarchaeology, palaeopathology,
-        and ancient DNA research. Detailed list in preparation.
-      </p>
+        <p class="entry">
+          Graefen, A., Alt, K.W. (2007).
+          <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>.
+          Anthropologischer Anzeiger.
+        </p>
 
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a>
-      </p>
+        <h2>Talks</h2>
+        <p>
+          Invited and conference talks in bioarchaeology, palaeopathology,
+          and ancient DNA research. Detailed list in preparation.
+        </p>
 
-      <footer>
-        © <span id="y"></span> bioarchaeology.de
-      </footer>
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a>
+        </p>
 
-    </main>
+        <footer>
+          © <span id="y"></span> bioarchaeology.de
+        </footer>
+
+      </main>
+
+    </div>
   </div>
 
   <script>
