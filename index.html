@@ -5,7 +5,7 @@
   <title>Dr. rer. nat. Angela Graefen – Bioarchaeology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Prevent indexing while you are still working -->
+  <!-- Prevent indexing while under construction -->
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
@@ -13,35 +13,39 @@
 
   <style>
     :root{
-      --bg: #f6f8fb;
-      --panel: #ffffff;
-      --ink: #101828;
-      --muted: #475467;
-      --line: #e6eaf0;
-      --accent: #2563eb;     /* blue */
-      --accent2: #0ea5a4;    /* teal */
-      --link: #1d4ed8;
-      --shadow: 0 12px 30px rgba(16,24,40,.08);
-      --radius: 18px;
+      --bg-main: #f3f7f5;
+      --bg-panel: #ffffff;
+      --ink: #102a27;
+      --muted: #4b6b66;
+      --line: #dfe8e5;
+      --accent: #2f7f6f;
+      --accent-soft: rgba(47,127,111,.08);
+      --shadow: 0 10px 28px rgba(0,0,0,.08);
+      --radius: 16px;
     }
 
     * { box-sizing: border-box; }
-    html, body { height: 100%; }
 
     body{
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-                   Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background:
-        radial-gradient(1100px 700px at 10% 0%, rgba(37,99,235,.12), transparent 55%),
-        radial-gradient(900px 600px at 100% 10%, rgba(14,165,164,.12), transparent 55%),
-        linear-gradient(180deg, var(--bg), #f3f6fb 55%, #f7f9fc);
+                   Roboto, Helvetica, Arial;
       color: var(--ink);
-      line-height: 1.6;
+      background:
+        linear-gradient(180deg, rgba(47,127,111,.08), transparent 240px),
+        repeating-linear-gradient(
+          45deg,
+          rgba(0,0,0,.015),
+          rgba(0,0,0,.015) 1px,
+          transparent 1px,
+          transparent 6px
+        ),
+        var(--bg-main);
+      line-height: 1.65;
     }
 
     a{
-      color: var(--link);
+      color: var(--accent);
       text-decoration: none;
     }
     a:hover{ text-decoration: underline; }
@@ -49,126 +53,88 @@
     .wrap{
       max-width: 980px;
       margin: 0 auto;
-      padding: 28px 18px 60px;
+      padding: 32px 20px 64px;
     }
 
     /* Header */
-    .hero{
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--line);
+    header{
       background:
-        linear-gradient(135deg, rgba(37,99,235,.10), rgba(14,165,164,.10)),
-        linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.92));
+        linear-gradient(135deg,
+          rgba(47,127,111,.12),
+          rgba(47,127,111,.03)
+        );
+      border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 26px 22px;
+      padding: 28px 26px;
     }
 
-    .hero-inner{
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .title{
+    header h1{
       margin: 0 0 6px;
-      font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+      font-size: 2rem;
+      font-weight: 600;
       letter-spacing: -0.02em;
     }
 
-    .subtitle{
-      margin: 0 0 14px;
+    header p{
+      margin: 0.2rem 0;
       color: var(--muted);
-      font-weight: 500;
+      max-width: 720px;
     }
 
-    .chips{
+    .fields{
+      margin-top: 14px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
+      gap: 10px;
     }
 
-    .chip{
-      font-size: .9rem;
-      color: #0b2a4a;
-      background: rgba(37,99,235,.10);
-      border: 1px solid rgba(37,99,235,.18);
-      padding: 6px 10px;
+    .field{
+      font-size: 0.95rem;
+      padding: 6px 12px;
       border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(47,127,111,.18);
+      color: #1f4d46;
       white-space: nowrap;
     }
-    .chip.teal{
-      background: rgba(14,165,164,.10);
-      border-color: rgba(14,165,164,.18);
-      color: #063d3c;
-    }
 
-    /* Decorative SVG */
-    .hero-art{
-      justify-self: end;
-      width: min(360px, 100%);
-      opacity: .95;
-      filter: drop-shadow(0 10px 18px rgba(16,24,40,.10));
-    }
-
-    /* Content card */
-    .card{
-      margin-top: 18px;
-      background: var(--panel);
+    /* Main content */
+    main{
+      margin-top: 24px;
+      background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 18px 18px 6px;
+      padding: 22px 24px 28px;
     }
 
     h2{
-      margin: 18px 0 10px;
-      font-size: 1.15rem;
-      letter-spacing: -0.01em;
+      margin-top: 26px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
     }
 
-    .rule{
-      height: 1px;
-      background: var(--line);
-      margin: 14px 0 4px;
+    p{
+      margin: 0.7rem 0;
     }
-
-    p{ margin: 10px 0; color: var(--ink); }
-
-    .muted{ color: var(--muted); }
 
     .entry{
-      margin: 10px 0 12px;
-      padding: 10px 12px;
-      border-left: 3px solid rgba(37,99,235,.35);
-      background: linear-gradient(180deg, rgba(37,99,235,.05), rgba(37,99,235,.02));
-      border-radius: 12px;
-    }
-    .entry.teal{
-      border-left-color: rgba(14,165,164,.35);
-      background: linear-gradient(180deg, rgba(14,165,164,.05), rgba(14,165,164,.02));
+      margin: 12px 0;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
     }
 
-    .entry em{ font-style: italic; }
-
-    .footer{
-      margin-top: 14px;
-      padding: 12px 4px 0;
+    footer{
+      margin-top: 24px;
+      font-size: 0.9rem;
       color: var(--muted);
-      font-size: .92rem;
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      align-items: center;
     }
 
-    /* Responsive */
-    @media (max-width: 820px){
-      .hero-inner{ grid-template-columns: 1fr; }
-      .hero-art{ justify-self: start; }
+    @media (max-width: 720px){
+      header h1{ font-size: 1.7rem; }
     }
   </style>
 </head>
@@ -176,104 +142,39 @@
 <body>
   <div class="wrap">
 
-    <header class="hero">
-      <div class="hero-inner">
-        <div>
-          <h1 class="title">Dr. rer. nat. Angela Graefen</h1>
-          <p class="subtitle">Bioarchaeology &amp; Life Sciences</p>
+    <header>
+      <h1>Dr. rer. nat. Angela Graefen</h1>
+      <p>Bioarchaeology and Life Sciences</p>
 
-          <div class="chips" aria-label="Research areas">
-            <span class="chip">Bioarchaeology</span>
-            <span class="chip teal">Human Osteology</span>
-            <span class="chip">Paleopathology</span>
-            <span class="chip teal">Ancient DNA</span>
-          </div>
-
-          <p class="muted" style="margin-top:14px;">
-            Academic calling card: thesis, publications, talks, and contact.
-          </p>
-        </div>
-
-        <!-- Lightweight inline SVG: DNA + bone motif -->
-        <svg class="hero-art" viewBox="0 0 560 260" role="img" aria-label="Stylised DNA helix and bone motif">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#2563eb" stop-opacity="0.95"/>
-              <stop offset="1" stop-color="#0ea5a4" stop-opacity="0.95"/>
-            </linearGradient>
-            <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#0ea5a4" stop-opacity="0.85"/>
-              <stop offset="1" stop-color="#2563eb" stop-opacity="0.85"/>
-            </linearGradient>
-            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="1.2"/>
-            </filter>
-          </defs>
-
-          <!-- background dots -->
-          <g opacity="0.25">
-            <circle cx="70" cy="55" r="3" fill="#2563eb"/>
-            <circle cx="105" cy="35" r="2.5" fill="#0ea5a4"/>
-            <circle cx="145" cy="70" r="2.5" fill="#2563eb"/>
-            <circle cx="190" cy="45" r="3" fill="#0ea5a4"/>
-            <circle cx="450" cy="65" r="3" fill="#2563eb"/>
-            <circle cx="500" cy="40" r="2.5" fill="#0ea5a4"/>
-            <circle cx="520" cy="95" r="2.5" fill="#2563eb"/>
-          </g>
-
-          <!-- DNA helix strands -->
-          <path d="M120,30 C220,60 240,100 330,130 C420,160 440,200 520,230"
-                fill="none" stroke="url(#g1)" stroke-width="10" stroke-linecap="round"/>
-          <path d="M120,230 C220,200 240,160 330,130 C420,100 440,60 520,30"
-                fill="none" stroke="url(#g2)" stroke-width="10" stroke-linecap="round"/>
-
-          <!-- DNA rungs -->
-          <g stroke="#0b2a4a" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round">
-            <line x1="150" y1="52" x2="152" y2="208"/>
-            <line x1="190" y1="72" x2="194" y2="188"/>
-            <line x1="230" y1="92" x2="238" y2="168"/>
-            <line x1="270" y1="112" x2="282" y2="148"/>
-            <line x1="310" y1="128" x2="322" y2="132"/>
-            <line x1="350" y1="148" x2="362" y2="112"/>
-            <line x1="390" y1="168" x2="398" y2="92"/>
-            <line x1="430" y1="188" x2="434" y2="72"/>
-            <line x1="470" y1="208" x2="472" y2="52"/>
-          </g>
-
-          <!-- Bone motif (stylised) -->
-          <g transform="translate(30,92)">
-            <path d="M65,35
-                     c-8,-18 6,-34 20,-28
-                     c6,-14 26,-14 32,0
-                     c14,-6 28,10 20,28
-                     c18,8 18,28 0,36
-                     c8,18 -6,34 -20,28
-                     c-6,14 -26,14 -32,0
-                     c-14,6 -28,-10 -20,-28
-                     c-18,-8 -18,-28 0,-36z"
-                  fill="white" stroke="#2563eb" stroke-opacity="0.65" stroke-width="6"/>
-            <path d="M92,35 h36" stroke="#0ea5a4" stroke-opacity="0.65" stroke-width="8" stroke-linecap="round" filter="url(#soft)"/>
-          </g>
-        </svg>
+      <div class="fields">
+        <span class="field">Bioarchaeology</span>
+        <span class="field">Human Osteology</span>
+        <span class="field">Paleopathology</span>
+        <span class="field">Ancient DNA</span>
       </div>
+
+      <p style="margin-top:14px;">
+        Academic profile presenting doctoral research, publications, invited talks,
+        and contact information.
+      </p>
     </header>
 
-    <main class="card">
+    <main>
 
       <h2>About</h2>
-      <p class="muted">
+      <p>
         Bioarchaeologist with a research focus on human osteology, paleopathology,
         and population genetics. Research interests include the reconstruction of
         health and disease in past populations, skeletal stress markers, and
-        interdisciplinary approaches combining osteological, radiological, and
-        molecular methods.
+        interdisciplinary approaches combining osteological, radiological,
+        and molecular methods.
       </p>
 
-      <div class="rule"></div>
-
-      <h2>PhD thesis</h2>
+      <h2>PhD Thesis</h2>
       <div class="entry">
-        Graefen, A. (2020). <em>Population genetic analysis of Neolithic to Bronze Age human remains from Trentino–Alto Adige (Northern Italy)</em>.
+        Graefen, A. (2020).
+        <em>Population genetic analysis of Neolithic to Bronze Age human remains from
+        Trentino–Alto Adige (Northern Italy)</em>.
         Doctoral thesis, Johannes Gutenberg-Universität Mainz.
         <a href="https://openscience.ub.uni-mainz.de/items/bbb094b5-1003-4c10-bcaf-c203b8d1bc25">Record</a>
         ·
@@ -281,10 +182,11 @@
       </div>
 
       <h2>Publications</h2>
-      <p class="muted">List in progress — keep items in the format: <strong>All authors</strong> (Year). <em>Title</em>. Journal. (DOI/Link).</p>
 
       <div class="entry">
-        Graefen, A., Alt, K.W. (2010). <em>Mummification today – a very normal affair</em>. Anthropologischer Anzeiger.
+        Graefen, A., Alt, K.W. (2010).
+        <em>Mummification today – a very normal affair</em>.
+        Anthropologischer Anzeiger.
       </div>
 
       <div class="entry">
@@ -300,32 +202,31 @@
       </div>
 
       <div class="entry">
-        Graefen, A., Alt, K.W. (2007). <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>. Anthropologischer Anzeiger.
+        Graefen, A., Alt, K.W. (2007).
+        <em>Mumifizierung heute – Eine ganz normale Angelegenheit</em>.
+        Anthropologischer Anzeiger.
       </div>
 
       <h2>Talks</h2>
-      <div class="entry teal">
-        Talks list in progress — keep items in the format: <strong>All authors</strong> (Year). <em>Title</em>. Event/Institution, Location.
-      </div>
+      <p>
+        Invited and conference talks in bioarchaeology, palaeopathology, and
+        ancient DNA research. Detailed list in preparation.
+      </p>
 
       <h2>Contact</h2>
       <p>
         Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a>
       </p>
 
-      <div class="footer">
-        <span>© <span id="y"></span> bioarchaeology.de</span>
-        <span class="muted">Last updated: <span id="d"></span></span>
-      </div>
-    </main>
+      <footer>
+        © <span id="y"></span> bioarchaeology.de
+      </footer>
 
+    </main>
   </div>
 
   <script>
-    // tiny convenience only; no tracking, no external requests
-    const now = new Date();
-    document.getElementById("y").textContent = now.getFullYear();
-    document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
