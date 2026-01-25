@@ -25,6 +25,8 @@
 
     * { box-sizing: border-box; }
 
+    html{ scroll-behavior: smooth; }
+
     body{
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
@@ -78,6 +80,24 @@
       color: var(--muted);
     }
 
+    /* Jump buttons */
+    .jump{
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .jump a{
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(47,127,111,.12);
+      border: 1px solid rgba(47,127,111,.28);
+      color: #1f4d46;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .jump a:hover{ text-decoration: underline; }
+
     main{ margin-top: 22px; }
 
     h2{
@@ -114,12 +134,19 @@
 <header>
   <h1>Dr. rer. nat. Angela Graefen</h1>
   <p>Bioarchaeology and Life Sciences</p>
+
+  <!-- Jump buttons (safe to add now) -->
+  <div class="jump">
+    <a href="#publications">Publications</a>
+    <a href="#talks">Conference Talks</a>
+    <a href="#theses">Academic Theses</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
 
 <main>
 
-<h2>Publications</h2>
-
+<h2 id="publications">Publications</h2>
 
 <div class="entry">
 
@@ -252,9 +279,7 @@
 
 </div>
 
-
-
-  <div class="entry">
+<div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -272,8 +297,7 @@
     </span>
   </a>
 
-  <br>
-  <br>
+  <br><br>
 
   <!-- Authors -->
   Albert Zink,
@@ -307,6 +331,7 @@
   </details>
 
 </div>
+
 <div class="entry">
 
   <!-- Title -->
@@ -319,15 +344,14 @@
   <br>
 
   <!-- Journal -->
-<a href="https://portal-cdn.scnat.ch/asset/6637fe53-a9f6-571d-890d-f318f97b2087/BSGA14%20K.pdf?b=d0e4053a-128c-59ce-a08b-2b8be5adcc6a&v=13dc40be-7cb3-548b-aff5-aa1eaaa89096_0&s=LotRX7RGEhdlMr-hnTxPxY25pCO7qmXd_38atLPI0EyXm58b9QBagdsJWZ1KO9iAyN5CPW8vOr6aIE7Vgv7kWq1jdWYSjYAo0wmimppysMKw9fCr4KjZO4amSeVjRIiG-DqgPT1oPhTbZV8iRM1XBl20iZ1AM4qQbXN5ydLKV_8#page=85"
-   target="_blank">
+  <a href="https://portal-cdn.scnat.ch/asset/6637fe53-a9f6-571d-890d-f318f97b2087/BSGA14%20K.pdf?b=d0e4053a-128c-59ce-a08b-2b8be5adcc6a&v=13dc40be-7cb3-548b-aff5-aa1eaaa89096_0&s=LotRX7RGEhdlMr-hnTxPxY25pCO7qmXd_38atLPI0EyXm58b9QBagdsJWZ1KO9iAyN5CPW8vOr6aIE7Vgv7kWq1jdWYSjYAo0wmimppysMKw9fCr4KjZO4amSeVjRIiG-DqgPT1oPhTbZV8iRM1XBl20iZ1AM4qQbXN5ydLKV_8#page=85"
+     target="_blank">
     <span style="font-size:1.15em; font-weight:700;">
-      Bulletin de la Société Suisse d'Anthropologie 14(1-2), 81
+      Bulletin de la Société Suisse d’Anthropologie 14(1–2), 81
     </span>
   </a>
 
-  <br>
-  <br>
+  <br><br>
 
   <!-- Authors -->
   <span style="font-weight:600;">Angela Graefen</span>,
@@ -366,6 +390,7 @@
   </details>
 
 </div>
+
 <div class="entry">
 
   <!-- Title -->
@@ -425,15 +450,18 @@
 
 </div>
 
+<!-- Placeholder sections so the buttons work immediately -->
+<h2 id="talks">Conference Talks</h2>
+<p style="color:var(--muted);">In preparation.</p>
 
+<h2 id="theses">Academic Theses</h2>
+<p style="color:var(--muted);">In preparation.</p>
 
-
-
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 <p>Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a></p>
 
 <footer>
-  © <span id="2025"></span> Dr. Angela Graefen
+  © <span id="y"></span> Dr. Angela Graefen
 </footer>
 
 </main>
