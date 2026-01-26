@@ -9,7 +9,7 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
 
-  <meta name="description" content="Academic profile of Dr. rer. nat. Angela Graefen, bioarchaeology">
+  <meta name="description" content="Dr. Angela Graefen, bioarchaeology, palaeopathology, mummy studies, publications, palaeogenetics">
 
   <style>
     :root{
@@ -64,30 +64,21 @@
       padding: 34px 36px 38px;
     }
 
-    /* ===== UPDATED HEADER (wider + clearly different look) ===== */
+    /* UPDATED: wider, calmer header styling */
     .site-header{
-      padding-bottom: 22px;
-      border-bottom: 1px solid var(--line);
+      padding-bottom: 26px;
+      margin-bottom: 22px;
+      border-bottom: none; /* remove old line */
     }
 
     .site-title{
-      margin: 0 0 14px;
-      font-size: 3rem;
-      font-weight: 520;
-      letter-spacing: 0.04em;   /* “wider” feel */
-      line-height: 1.05;
-      display: block;           /* enables the bar below */
-    }
-
-    .site-title::after{
-      content: "";
-      display: block;
-      height: 3px;
-      width: 100%;
-      max-width: 520px;         /* remove this line for truly full-width */
-      margin-top: 12px;
-      background: rgba(47,127,111,.85);
-      border-radius: 999px;
+      font-size: 2.6rem;
+      font-weight: 500;       /* calmer, academic */
+      letter-spacing: 0.02em; /* subtle width */
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;  /* underline only under text */
     }
 
     /* Jump buttons */
@@ -138,7 +129,7 @@
     /* Intro card layout */
     .intro-grid{
       display: grid;
-      grid-template-columns: 1fr 220px; /* text | image */
+      grid-template-columns: 1fr 220px; /* text | image placeholder */
       gap: 20px;
       align-items: center;
     }
@@ -148,44 +139,30 @@
       justify-content: center;
     }
 
-    .image-placeholder{
-      width: 100%;
-      height: 140px;
-      border: 2px dashed rgba(0,0,0,0.25);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.9em;
-      background: rgba(255,255,255,0.6);
-    }
-
     /* Stack on small screens */
     @media (max-width: 700px){
       .intro-grid{
         grid-template-columns: 1fr;
       }
-      .site-title{
-        font-size: 2.3rem;
-      }
     }
 
-    /* Intro text styling */
-    header .intro-text p{
-      font-size: 1.25rem;
-      line-height: 1.70;
-      color: var(--accent);
+    /* Intro text styling – refined academic tone
+       NOTE: selector updated to match your new header class */
+    .site-header .intro-text p{
+      font-size: 1.22rem;
+      line-height: 1.75;
+      color: #245f54;          /* darker, calmer green than links */
       font-style: italic;
+      font-weight: 450;        /* lighter than before */
+      letter-spacing: 0.01em;  /* subtle handwritten feel */
       margin: 0;
     }
 
-    /* Optional: make it feel more "header-like" */
     .intro-text{
-      font-weight: 500;
+      font-weight: normal;
     }
 
-    .intro-image img {
+    .intro-image img{
       width: 100%;
       max-width: 280px;      /* adjust if you want it larger/smaller */
       height: auto;
@@ -201,7 +178,9 @@
 <div class="panel">
 
 <header class="site-header">
-  <h1 class="site-title">test3</h1>
+  <h1 class="site-title">Dr. Angela Graefen</h1>
+
+
 
   <!-- Intro card (text + image) -->
   <div class="entry" style="margin:16px 0 0;">
@@ -239,6 +218,8 @@
     <a href="#contact">Contact</a>
   </div>
 </header>
+
+
 
 <main>
 
@@ -574,6 +555,7 @@
     ">
 </div>
 
+
   <!-- Presented by -->
   <em>Presented by <span style="font-weight:600;">Angela Graefen</span>.</em>
 
@@ -599,7 +581,6 @@
   </details>
 
 </div>
-
 <div class="entry">
 
   <!-- Title -->
@@ -665,7 +646,7 @@
 
 </div>
 
-<div class="entry">
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -694,7 +675,8 @@
 
 </div>
 
-<div class="entry">
+
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -723,7 +705,9 @@
 
 </div>
 
-<div class="entry">
+ 
+
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -787,7 +771,7 @@
 
 </div>
 
-<div class="entry">
+   <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -901,7 +885,7 @@
 
 </div>
 
-<div class="entry">
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -924,7 +908,8 @@
 
 </div>
 
-<div class="entry">
+
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -948,7 +933,8 @@
 
 </div>
 
-<div class="entry">
+
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -971,7 +957,12 @@
 
 </div>
 
-<h2 id="chapters">Book Chapters</h2>
+
+  
+
+  
+
+  <h2 id="chapters">Book Chapters</h2>
 <div class="entry">
 
   <!-- Title -->
@@ -993,7 +984,7 @@
   <!-- Image -->
   <div style="margin:14px 0 16px;">
     <img
-      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies6.JPG"
+      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies9.png"
       alt="Exhibition volume Mumien - Mummies of the World"
       style="
         max-width:100%;
@@ -1005,9 +996,9 @@
   </div>
 
   <!-- Publication details -->
-  2010, pp. 181-188.
+  2010, pp. 181-188.  
   Accompanying volume to the exhibition “Mummies of the World”, various venues in the
-  United States, 2010-2013.
+  United States, 2010-2013.  
   ISBN 978-3-7913-5030-0.
 
   <br><br>
@@ -1017,7 +1008,7 @@
 
 </div>
 
-<div class="entry">
+  <div class="entry">
 
   <!-- Title -->
   <span style="font-size:1.3em;">
@@ -1038,7 +1029,7 @@
   <!-- Image -->
   <div style="margin:14px 0 16px;">
     <img
-      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies5.JPG"
+      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies8.png"
       alt="Exhibition volume Mumien - Der Traum vom ewigen Leben"
       style="
         max-width:100%;
@@ -1050,9 +1041,9 @@
   </div>
 
   <!-- Publication details -->
-  Mainz 2007, pp. 181-188.
+  Mainz 2007, pp. 181-188.  
   Accompanying volume to the exhibition “Mummies - The Dream of Everlasting Life”,
-  Reiss-Engelhorn Museum Mannheim, 30.9.2007 - 24.3.2008.
+  Reiss-Engelhorn Museum Mannheim, 30.9.2007 - 24.3.2008.  
   ISBN 978-3-8053-3779-3.
 
   <br><br>
@@ -1061,6 +1052,7 @@
   <span style="font-weight:600;">Angela Graefen</span> & Kurt W. Alt (2007).
 
 </div>
+
 
 <!-- Academic Theses -->
 <h2 id="theses">Academic Theses</h2>
@@ -1092,6 +1084,8 @@
   Johannes Gutenberg University Mainz, Germany
 </span>
 
+  </a>
+
   <br>
 
   <!-- Image placeholder (replace src later) -->
@@ -1101,8 +1095,8 @@
       alt="Thesis cover / figure (to be added)"
       style="
         max-width:100%;
-        width:560px;
-        border-radius:12px;
+     width:560px;
+      border-radius:12px;
         border:1px solid rgba(0,0,0,0.15);
         display:block;
       ">
@@ -1119,51 +1113,68 @@
   </a>,
   Bolzano, Italy
 
+
+
   <!-- Language summaries -->
-  <div style="margin-top:12px;">
+<div style="margin-top:12px;">
 
-    <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
-        Summary (English)
-      </summary>
-      <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
-        In the present population genetic study, 76 prehistoric individuals (8 Neolithic, 30 Copper Age, and 38 Bronze Age) from 12 archaeological sites in South Tyrol-Trentino were investigated using paleogenetic methods. The loci examined included HVR1 (hypervariable region I) and position 12308 of the mitochondrial genome, the amelogenin locus for sex determination, the SNPs (single nucleotide polymorphisms) rs12913832 (HERC2 gene, discrimination between brown and blue eye color) and rs4988235 (MCM6 gene, -13.910*C/T; lactase persistence), as well as various SNPs on the Y chromosome for the determination of paternal lineages. The DNA data were compared with prehistoric and modern reference populations. The aim of the study was a population-historical analysis of the prehistoric population of South Tyrol-Trentino. In particular, it addressed whether this population showed predominantly Mesolithic lineages or whether its roots lay in immigrating Neolithic farmers and livestock breeders. For the Early Bronze Age, the study also sought to clarify the extent to which the Copper Age-Bronze Age expansion originating in the Pontic Steppe left genetic traces in South Tyrol. In addition, the prehistoric groups from South Tyrol-Trentino were compared with the Iceman ("Otzi") and with modern populations from the same region. During sample preparation and analysis, strict anti-contamination measures were observed to prevent contamination with modern DNA or cross-contamination with other samples. In total, mitochondrial DNA was successfully sequenced from 59 individuals and nuclear DNA from 36 individuals. Since second extractions were not available for all samples and replication of results in another laboratory was not always possible, a scoring system was established (based on sequence quality, number of PCRs and extracts, and replication in another laboratory) to assess the reliability of the respective results. Thirty-seven individuals yielded mitochondrial sequences with a sufficient score and could therefore be used for statistical analyses. Mitochondrial lineages associated with the Mesolithic population of Europe were present only at low frequencies. Overall, the observed haplotype spectrum more closely resembles that of Early Neolithic groups from Central and Southeastern Europe than that of Mediterranean populations. This finding is consistent with a Neolithization of South Tyrol-Trentino in the context of the Danubian expansion. While the Copper Age group resembled Neolithic reference populations, the Bronze Age sample was more similar to prehistoric populations associated with the Pontic Steppe. The fact that some rare haplotypes were found not only in prehistoric samples but also in modern populations of South Tyrol-Trentino nevertheless indicates a certain degree of continuity since the Copper Age. Whereas Y-chromosomal lineages were largely replaced during the Bronze Age in Central and Northern Europe, Neolithic Y lineages persisted in South Tyrol-Trentino until the second half of the 3rd millennium BCE. Direct kinship with the Iceman could not be demonstrated.
-      </p>
-    </details>
+  <details style="margin-top:10px;">
+    <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+      Summary (English)
+    </summary>
+    <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+      In the present population genetic study, 76 prehistoric individuals (8 Neolithic, 30 Copper Age, and 38 Bronze Age) from 12 archaeological sites in South Tyrol-Trentino were investigated using paleogenetic methods. The loci examined included HVR1 (hypervariable region I) and position 12308 of the mitochondrial genome, the amelogenin locus for sex determination, the SNPs (single nucleotide polymorphisms) rs12913832 (HERC2 gene, discrimination between brown and blue eye color) and rs4988235 (MCM6 gene, -13.910*C/T; lactase persistence), as well as various SNPs on the Y chromosome for the determination of paternal lineages. The DNA data were compared with prehistoric and modern reference populations. The aim of the study was a population-historical analysis of the prehistoric population of South Tyrol-Trentino. In particular, it addressed whether this population showed predominantly Mesolithic lineages or whether its roots lay in immigrating Neolithic farmers and livestock breeders. For the Early Bronze Age, the study also sought to clarify the extent to which the Copper Age-Bronze Age expansion originating in the Pontic Steppe left genetic traces in South Tyrol. In addition, the prehistoric groups from South Tyrol-Trentino were compared with the Iceman ("Otzi") and with modern populations from the same region. During sample preparation and analysis, strict anti-contamination measures were observed to prevent contamination with modern DNA or cross-contamination with other samples. In total, mitochondrial DNA was successfully sequenced from 59 individuals and nuclear DNA from 36 individuals. Since second extractions were not available for all samples and replication of results in another laboratory was not always possible, a scoring system was established (based on sequence quality, number of PCRs and extracts, and replication in another laboratory) to assess the reliability of the respective results. Thirty-seven individuals yielded mitochondrial sequences with a sufficient score and could therefore be used for statistical analyses. Mitochondrial lineages associated with the Mesolithic population of Europe were present only at low frequencies. Overall, the observed haplotype spectrum more closely resembles that of Early Neolithic groups from Central and Southeastern Europe than that of Mediterranean populations. This finding is consistent with a Neolithization of South Tyrol-Trentino in the context of the Danubian expansion. While the Copper Age group resembled Neolithic reference populations, the Bronze Age sample was more similar to prehistoric populations associated with the Pontic Steppe. The fact that some rare haplotypes were found not only in prehistoric samples but also in modern populations of South Tyrol-Trentino nevertheless indicates a certain degree of continuity since the Copper Age. Whereas Y-chromosomal lineages were largely replaced during the Bronze Age in Central and Northern Europe, Neolithic Y lineages persisted in South Tyrol-Trentino until the second half of the 3rd millennium BCE. Direct kinship with the Iceman could not be demonstrated.
+    </p>
+  </details>
 
-    <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
-        Zusammenfassung (Deutsch)
-      </summary>
-      <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
-        Bei der vorliegenden populationsgenetischen Studie wurden 76 prähistorische Individuen (8 Neolithikum, 30 Kupferzeit und 38 Bronzezeit) von 12 Fundorten in Südtirol und Trentino paläogenetisch untersucht. Die untersuchten loci umfassten die HVR1 (hypervariable Region I) sowie Position 12308 des mitochondrialen Genoms, den Amelogenin-locus zur Bestimmung des Geschlechts, die SNPs (single nucleotide polymorphisms) rs12913832 (HERC2 Gen, Unterscheidung zwischen brauner/blauer Augenfarbe) und rs4988235 (MCM6 Gen, 13.910*C/T; Laktasepersistenz), sowie verschiedene SNPs auf dem Y Chromosom zur Bestimmung väterlicher Linien. Die DNA-Daten wurden mit prähistorischen und modernen Referenzpopulationen verglichen. Ziel der Studie war eine populationsgeschichtliche Analyse der prähistorischen Bevölkerung Südtirol Trentinos. So wurde der Frage nachgegangen, ob diese eher mesolithische Linien zeigt oder ihre Wurzeln in den eingewanderten neolithischen Ackerbauern und Viehzüchtern hatte. Für die frühe Bronzezeit sollte zudem geklärt werden, in welchem Umfang die kupferzeitliche/bronzezeitliche Expansion, die in der pontischen Steppe ihren Ursprung hatte, in Südtirol genetische Spuren hinterlassen hat. Außerdem wurden die prähistorischen Gruppen aus Südtirol-Trentino mit dem Mann aus dem Eis („Ötzi“) und mit modernen Populationen aus dem gleichen Gebiet verglichen.
-        Bei der Probenaufbereitung und analyse wurden strenge Antikontaminationsmaßnahmen beachtet, um eine Verunreinigung mit moderner DNA oder Kreuzkontamination mit anderen Proben zu vermeiden. Insgesamt konnte von 59 Individuen mitochondriale und von 36 nukleäre DNA sequenziert werden. Da Zweitextrakte nicht für alle Proben vorlagen bzw. Replikation der Ergebnisse in einem anderen Labor nicht in jedem Fall möglich war, wurde ein scoring System etabliert (basierend auf Sequenzqualität, Anzahl der PCRs und Extrakte sowie Replikation in einem anderen Labor) um die Reliabilität der jeweiligen Ergebnisse festzustellen. 37 Individuen zeigten mitochondriale Sequenzen mit ausreichendem score und konnten somit für die statistischen Analysen verwendet werden.
-        Mitochondriale Linien, die mit der mesolithischen Bevölkerung Europas assoziiert werden, lagen in nur geringer Häufigkeit vor. Insgesamt gleicht das beobachtete Haplotypenspektrum eher demjenigen frühneolithischer Gruppen aus Mittel- bzw. Südosteuropa als aus dem Mittelmeerraum. Dieser Befund ist konsistent mit einer Neolithisierung von Südtirol-Trentino im Zusammenhang mit der danubischen Expansion. Während die kupferzeitliche Gruppe neolithischen Referenzpopulationen ähnelte, glich die bronzezeitliche Stichprobe eher prähistorischen Populationen mit Bezug zur pontischen Steppe. Die Tatsache, dass einige seltene Haplotypen nicht nur in den prähistorischen Proben, sondern auch in modernen Populationen Südtirol-Trentinos gefunden wurden, spricht jedoch auch für einen gewissen Grad an Kontinuität seit der Kupferzeit. Während Y-chromosomale Linien im Laufe der Bronzezeit in Mittel- und Nordeuropa weitegehend ersetzt werden, persistieren neolithische Y-Linien in Südtirol-Trentino bis in die zweite Hälfte des 3. vorchristlichen Jahrtausends. Direkte Verwandtschaft mit dem Mann aus dem Eis konnte nicht nachgewiesen werden.
-      </p>
-    </details>
+  <details style="margin-top:10px;">
+    <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+      Zusammenfassung (Deutsch)
+    </summary>
+    <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+      Bei der vorliegenden populationsgenetischen Studie wurden 76 prähistorische Individuen (8 Neolithikum, 30 Kupferzeit und 38 Bronzezeit) von 12 Fundorten in Südtirol und Trentino paläogenetisch untersucht. Die untersuchten loci umfassten die HVR1 (hypervariable Region I) sowie Position 12308 des mitochondrialen Genoms, den Amelogenin-locus zur Bestimmung des Geschlechts, die SNPs (single nucleotide polymorphisms) rs12913832 (HERC2 Gen, Unterscheidung zwischen brauner/blauer Augenfarbe) und rs4988235 (MCM6 Gen, 13.910*C/T; Laktasepersistenz), sowie verschiedene SNPs auf dem Y Chromosom zur Bestimmung väterlicher Linien. Die DNA-Daten wurden mit prähistorischen und modernen Referenzpopulationen verglichen. Ziel der Studie war eine populationsgeschichtliche Analyse der prähistorischen Bevölkerung Südtirol Trentinos. So wurde der Frage nachgegangen, ob diese eher mesolithische Linien zeigt oder ihre Wurzeln in den eingewanderten neolithischen Ackerbauern und Viehzüchtern hatte. Für die frühe Bronzezeit sollte zudem geklärt werden, in welchem Umfang die kupferzeitliche/bronzezeitliche Expansion, die in der pontischen Steppe ihren Ursprung hatte, in Südtirol genetische Spuren hinterlassen hat. Außerdem wurden die prähistorischen Gruppen aus Südtirol-Trentino mit dem Mann aus dem Eis („Ötzi“) und mit modernen Populationen aus dem gleichen Gebiet verglichen.
+Bei der Probenaufbereitung und analyse wurden strenge Antikontaminationsmaßnahmen beachtet, um eine Verunreinigung mit moderner DNA oder Kreuzkontamination mit anderen Proben zu vermeiden. Insgesamt konnte von 59 Individuen mitochondriale und von 36 nukleäre DNA sequenziert werden. Da Zweitextrakte nicht für alle Proben vorlagen bzw. Replikation der Ergebnisse in einem anderen Labor nicht in jedem Fall möglich war, wurde ein scoring System etabliert (basierend auf Sequenzqualität, Anzahl der PCRs und Extrakte sowie Replikation in einem anderen Labor) um die Reliabilität der jeweiligen Ergebnisse festzustellen. 37 Individuen zeigten mitochondriale Sequenzen mit ausreichendem score und konnten somit für die statistischen Analysen verwendet werden.
+Mitochondriale Linien, die mit der mesolithischen Bevölkerung Europas assoziiert werden, lagen in nur geringer Häufigkeit vor. Insgesamt gleicht das beobachtete Haplotypenspektrum eher demjenigen frühneolithischer Gruppen aus Mittel- bzw. Südosteuropa als aus dem Mittelmeerraum. Dieser Befund ist konsistent mit einer Neolithisierung von Südtirol-Trentino im Zusammenhang mit der danubischen Expansion. Während die kupferzeitliche Gruppe neolithischen Referenzpopulationen ähnelte, glich die bronzezeitliche Stichprobe eher prähistorischen Populationen mit Bezug zur pontischen Steppe. Die Tatsache, dass einige seltene Haplotypen nicht nur in den prähistorischen Proben, sondern auch in modernen Populationen Südtirol-Trentinos gefunden wurden, spricht jedoch auch für einen gewissen Grad an Kontinuität seit der Kupferzeit. Während Y-chromosomale Linien im Laufe der Bronzezeit in Mittel- und Nordeuropa weitegehend ersetzt werden, persistieren neolithische Y-Linien in Südtirol-Trentino bis in die zweite Hälfte des 3. vorchristlichen Jahrtausends. Direkte Verwandtschaft mit dem Mann aus dem Eis konnte nicht nachgewiesen werden.
+    </p>
+  </details>
 
-    <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
-        Riassunto (Italiano)
-      </summary>
-      <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
-        In questo studio sulla genetica delle popolazioni del Trentino-Alto Adige sono stati esaminati 76 individui preistorici (8 del Neolitico, 30 dell’Età del Rame e 38 dell’Età del Bronzo) provenienti da 12 siti. Sono stati caratterizzati i seguenti loci e polimorfismi genetici: il locus HVR1 (hypervariable region, regione ipervariabile I) e la posizione 12308 del genoma mitocondriale (mtDNA, determinazione origine materna); il locus amelogenina (determinazione del sesso); il polimorfismo a singolo nucleotide, SNP rs12913832 (gene HERC2, per la determinazione del colore degli occhi); lo SNP rs4988235 (gene MCM6, 13.910*T, persistenza della lattasi; capacità di digerire il lattosio oltre l'infanzia) e vari altri SNPs sul cromosoma Y per la determinazione dell'origine paterna. I risultati sono stati confrontati con delle popolazioni di riferimento, sia preistoriche che moderne. Gli obiettivi del presente studio (sulla base di loci mitocondriali, nucleari e Y-cromosomali) erano di: 1) comprendere, ad esempio, se i gruppi analizzati presentassero delle linee genetiche di origine Mesolitica (cacciatori-raccoglitori) o Neolitica, questi ultimi più affini agli agricoltori e allevatori di bestiame del Vicino Oriente; 2) individuare possibili differenze genetiche tra gli individui datati all’Età del Bronzo, forse attribuibili all’espansione demografica dell’Età del Rame/Bronzo, originatasi nella steppa pontica; 3) confrontare i gruppi preistorici del Trentino-Alto Adige sia con l'Uomo Venuto dal Ghiaccio ("Ötzi") che con le popolazioni moderne della stessa area per determinare la loro possibile relazione/continuità genetica. La preparazione e l’analisi dei campioni antichi sono state effettuate seguendo le procedure per evitare qualsiasi tipo di cross-contaminazione con il DNA esogeno (moderno oppure con il DNA di altri campioni). Dei 76 individui, 59 DNA mitocondriali e 36 DNA nucleari sono stati sequenziati con successo. Considerando che non è stato possibile eseguire un secondo processamento di tutti i campioni o replicare i risultati in un altro laboratorio, è stato stabilito un sistema di punteggio (basato sulla qualità della sequenza, sul numero di PCR ed estratti e sulla replicazione in un altro laboratorio) al fine di misurare la "qualità" dei rispettivi risultati. Solo i risultati con un punteggio sufficiente sono stati inseriti nelle analisi statistiche. A tale proposito, i campioni neolitici sono stati esclusi poiché non hanno ottenuto un punteggio sufficiente. I campioni rimanenti invece sono stati distinti in due gruppi, "Età del Rame" e "Età del Bronzo", non solo sulla base della cronologia, ma anche delle differenze tipologiche (archeologiche). Nel complesso, il gruppo dell'Età del Rame ha mostrato una minore distanza genetica dalle popolazioni neolitiche di riferimento, mentre il gruppo dell'Età del Bronzo ha presentato una minore distanza dalle popolazioni di riferimento che provengono in parte da gruppi originari della steppa pontica (cultura di Jamna). Non sono state trovate prove evidenti di continuità dal Paleolitico (anche se, potenzialmente, alcuni individui potrebbero presentare delle linee paleolitiche). Nel complesso, sono state riscontrate più somiglianze con gruppi ceramici a banda lineare provenienti dai Balcani, rispetto a quelli mediterranei. Pertanto, si ipotizza che la cultura neolitica sia stata introdotta in Trentino-Alto Adige via terra. Il fatto che, in Alto Adige, alcuni aplotipi molto rari siano stati trovati non solo in campioni preistorici ma anche in gruppi moderni, suggerisce una certa continuità o persistenza di linee rare dall'Età del Rame fino ai nostri giorni. Nonostante alcuni campioni abbiano mostrato linee simili a quelle dell'Uomo Venuto dal Ghiaccio, non è stato possibile trovare corrispondenze esatte degli aplogruppi mitocondriali e Y-cromosomali, pertanto una stretta relazione tra l'Uomo Venuto dal Ghiaccio e i gruppi ad esso coevi del Trentino-Alto Adige non può essere affermata.
-      </p>
-    </details>
+  <details style="margin-top:10px;">
+    <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+      Riassunto (Italiano)
+    </summary>
+    <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+      In questo studio sulla genetica delle popolazioni del Trentino-Alto Adige sono stati esaminati 76 individui preistorici (8 del Neolitico, 30 dell’Età del Rame e 38 dell’Età del Bronzo) provenienti da 12 siti. Sono stati caratterizzati i seguenti loci e polimorfismi genetici: il locus HVR1 (hypervariable region, regione ipervariabile I) e la posizione 12308 del genoma mitocondriale (mtDNA, determinazione origine materna); il locus amelogenina (determinazione del sesso); il polimorfismo a singolo nucleotide, SNP rs12913832 (gene HERC2, per la determinazione del colore degli occhi); lo SNP rs4988235 (gene MCM6, 13.910*T, persistenza della lattasi; capacità di digerire il lattosio oltre l'infanzia) e vari altri SNPs sul cromosoma Y per la determinazione dell'origine paterna. I risultati sono stati confrontati con delle popolazioni di riferimento, sia preistoriche che moderne. Gli obiettivi del presente studio (sulla base di loci mitocondriali, nucleari e Y-cromosomali) erano di: 1) comprendere, ad esempio, se i gruppi analizzati presentassero delle linee genetiche di origine Mesolitica (cacciatori-raccoglitori) o Neolitica, questi ultimi più affini agli agricoltori e allevatori di bestiame del Vicino Oriente; 2) individuare possibili differenze genetiche tra gli individui datati all’Età del Bronzo, forse attribuibili all’espansione demografica dell’Età del Rame/Bronzo, originatasi nella steppa pontica; 3) confrontare i gruppi preistorici del Trentino-Alto Adige sia con l'Uomo Venuto dal Ghiaccio ("Ötzi") che con le popolazioni moderne della stessa area per determinare la loro possibile relazione/continuità genetica. La preparazione e l’analisi dei campioni antichi sono state effettuate seguendo le procedure per evitare qualsiasi tipo di cross-contaminazione con il DNA esogeno (moderno oppure con il DNA di altri campioni). Dei 76 individui, 59 DNA mitocondriali e 36 DNA nucleari sono stati sequenziati con successo. Considerando che non è stato possibile eseguire un secondo processamento di tutti i campioni o replicare i risultati in un altro laboratorio, è stato stabilito un sistema di punteggio (basato sulla qualità della sequenza, sul numero di PCR ed estratti e sulla replicazione in un altro laboratorio) al fine di misurare la "qualità" dei rispettivi risultati. Solo i risultati con un punteggio sufficiente sono stati inseriti nelle analisi statistiche. A tale proposito, i campioni neolitici sono stati esclusi poiché non hanno ottenuto un punteggio sufficiente. I campioni rimanenti invece sono stati distinti in due gruppi, "Età del Rame" e "Età del Bronzo", non solo sulla base della cronologia, ma anche delle differenze tipologiche (archeologiche). Nel complesso, il gruppo dell'Età del Rame ha mostrato una minore distanza genetica dalle popolazioni neolitiche di riferimento, mentre il gruppo dell'Età del Bronzo ha presentato una minore distanza dalle popolazioni di riferimento che provengono in parte da gruppi originari della steppa pontica (cultura di Jamna). Non sono state trovate prove evidenti di continuità dal Paleolitico (anche se, potenzialmente, alcuni individui potrebbero presentare delle linee paleolitiche). Nel complesso, sono state riscontrate più somiglianze con gruppi ceramici a banda lineare provenienti dai Balcani, rispetto a quelli mediterranei. Pertanto, si ipotizza che la cultura neolitica sia stata introdotta in Trentino-Alto Adige via terra. Il fatto che, in Alto Adige, alcuni aplotipi molto rari siano stati trovati non solo in campioni preistorici ma anche in gruppi moderni, suggerisce una certa continuità o persistenza di linee rare dall'Età del Rame fino ai nostri giorni. Nonostante alcuni campioni abbiano mostrato linee simili a quelle dell'Uomo Venuto dal Ghiaccio, non è stato possibile trovare corrispondenze esatte degli aplogruppi mitocondriali e Y-cromosomali, pertanto una stretta relazione tra l'Uomo Venuto dal Ghiaccio e i gruppi ad esso coevi del Trentino-Alto Adige non può essere affermata. 
 
-  </div>
+    </p>
+  </details>
+
 </div>
 
-<h2 id="contact">Contact</h2>
+
+</div>
+  <h2 id="contact">Contact</h2>
 <p>Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a></p>
 
 <footer>
   © Dr. Angela Graefen
+  <br><br>
+  Foundational member of
+  <br>
+  <img
+    src="https://www.bioarchaeology.de/images/wmss.jpeg"
+    alt="WMSS logo"
+    style="margin-top:10px; max-width:220px; width:100%; height:auto; border-radius:10px; border:1px solid rgba(0,0,0,0.15);"
+  >
 </footer>
 
 </main>
 </div>
 </div>
 
+
+
 </body>
 </html>
+
+
+
