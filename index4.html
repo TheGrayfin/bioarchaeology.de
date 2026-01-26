@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dr. Angela Graefen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Prevent indexing while under construction -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+
+  <meta name="description" content="Academic profile of Dr. rer. nat. Angela Graefen, bioarchaeology">
+
+  <style>
+    :root{
+      --ink: #0f2320;
+      --muted: #3f5f59;
+      --line: rgba(0, 0, 0, 0.15);
+      --accent: #2f7f6f;
+
+      --panel-bg: rgba(233, 244, 242, 0.90);
+      --shadow: 0 14px 34px rgba(0,0,0,.18);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html{ scroll-behavior: smooth; }
+
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                   Roboto, Helvetica, Arial;
+      color: var(--ink);
+      line-height: 1.4;
+
+      background-image: url("https://thegrayfin.github.io/bioarchaeology.de/background1.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100% auto;
+      background-attachment: fixed;
+      background-color: #f3f7f6;
+    }
+
+    a{
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 60px 22px 80px;
+    }
+
+    .panel{
+      background: var(--panel-bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 34px 36px 38px;
+    }
+
+    header{
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
+    }
+
+    header h1{
+      margin: 0 0 6px;
+      font-size: 2rem;
+      font-weight: 650;
+    }
+
+    /* Jump buttons */
+    .jump{
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .jump a{
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(47,127,111,.12);
+      border: 1px solid rgba(47,127,111,.28);
+      color: #1f4d46;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .jump a:hover{ text-decoration: underline; }
+
+    main{ margin-top: 22px; }
+
+    h2{
+      margin-top: 32px;
+      font-size: 1.2rem;
+      font-weight: 650;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 6px;
+    }
+
+    /* Publication cards */
+    .entry{
+      margin: 20px 0;
+      padding: 18px 20px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 12px;
+      background: rgba(245, 245, 245, 0.95);
+    }
+
+    @media (max-width: 900px){
+      body{
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+      }
+    }
+
+    /* =========================
+       Intro card layout (UPDATED)
+       ========================= */
+    .intro-grid{
+      display: grid;
+      grid-template-columns: 1fr 280px; /* text | image */
+      gap: 20px;
+      align-items: stretch;             /* <-- makes text column match image column height */
+    }
+
+    .intro-text{
+      display: flex;                    /* <-- allows vertical alignment within the stretched column */
+      align-items: center;              /* <-- centers the paragraph vertically */
+      font-weight: 500;
+    }
+
+    .intro-text p{
+      font-size: 1.12rem;               /* slightly larger */
+      line-height: 1.65;                /* more spacing to better match image height */
+      color: var(--ink);
+      margin: 0;
+    }
+
+    .intro-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .intro-image img{
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    /* Stack on small screens */
+    @media (max-width: 700px){
+      .intro-grid{
+        grid-template-columns: 1fr;
+      }
+      .intro-text{
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="panel">
+
+      <header>
+        <h1>Dr. rer. nat. Angela Graefen</h1>
+
+        <!-- Intro card (text + image) -->
+        <div class="entry" style="margin:16px 0 0;">
+          <div class="intro-grid">
+
+            <!-- Text column -->
+            <div class="intro-text">
+              <p>
+                Bioarchaeological research experience centred on palaeopathology,
+                palaeogenetics, and mummy studies. Biological and medical perspectives
+                provide a framework for examining disease, health, and mortality in
+                prehistoric and historic populations and individuals, informed by
+                archaeological, biological, and historical evidence.
+              </p>
+            </div>
+
+            <!-- Image column -->
+            <div class="intro-image">
+              <img
+                class="intro-photo"
+                src="https://thegrayfin.github.io/bioarchaeology.de/images/skull1.png"
+                alt="Portrait"
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Jump buttons -->
+        <div class="jump">
+          <a href="#publications">Publications</a>
+          <a href="#talks">Conference Presentations</a>
+          <a href="#chapters">Book Chapters</a>
+          <a href="#theses">Academic Theses</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <main>
+
+        <h2 id="publications">Publications</h2>
+
+        <div class="entry">
+          <!-- Title -->
+          <span style="font-size:1.3em;">
+            <strong>
+              New insights into the Tyrolean Iceman’s origin and phenotype as inferred by whole-genome sequencing
+            </strong>
+          </span>
+
+          <br>
+
+          <!-- Journal -->
+          <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
+            <span style="font-size:1.15em; font-weight:700;">
+              Nature Communications 3, 1701
+            </span>
+          </a>
+
+          <br>
+
+          <!-- Image -->
+          <div style="margin:14px 0 16px;">
+            <a href="https://www.nature.com/articles/ncomms1701" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanPCA.png"
+                alt="PCA plot from the Iceman genome study"
+                style="
+                  max-width:100%;
+                  width:560px;
+                  border-radius:12px;
+                  border:1px solid rgba(0,0,0,0.15);
+                  display:block;
+                ">
+            </a>
+          </div>
+
+          <!-- Authors -->
+          Andreas Keller,<sup style="font-size:0.75em; vertical-align:0.35em;">*</sup>
+          <span style="font-weight:600;">Angela Graefen</span>,<sup style="font-size:0.75em; vertical-align:0.35em;">*</sup>
+          Markus Ball,<sup style="font-size:0.75em; vertical-align:0.35em;">*</sup>
+          Mark Matzas, Valesca Boisguerin, Frank Maixner, Petra Leidinger,
+          Christina Backes, Rabab Khairat, Michael Forster, Björn Stade,
+          Andre Franke, Jens Mayer, Jessica Spangler, Stephen McLaughlin,
+          Minita Shah, Clarence Lee, Timothy Harkins, Alexander Sartori,
+          Andres Moreno-Estrada, Brenna Henn, Martin Sikora, Ornella Semino,
+          Jacques Chiaroni, Siiri Rootsi, Natalie Myres, Vicente Cabrera,
+          Peter Underhill, Carlos Bustamante, Eduard Egarter Vigl,
+          Marco Samadelli, Giovanna Cipollini, Jan Haas, Hugo Katus,
+          Brian O’Connor, Marc Carlson, Benjamin Meder, Nikolaus Blin,
+          Eckart Meese, Carsten Pusch & Albert Zink (2012).
+          <span style="font-size:0.85em; font-style:italic;">
+            <sup style="font-size:0.75em; vertical-align:0.35em;">*</sup>
+            Equal contribution as first authors.
+          </span>
+
+          <!-- Optional abstract -->
+          <details style="margin-top:10px;">
+            <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+              Abstract
+            </summary>
+            <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+              The Tyrolean Iceman, a 5,300-year-old Copper Age individual, was discovered in 1991
+              on the Tisenjoch Pass in the Italian part of the Ötztal Alps. Here we report the
+              complete genome sequence of the Iceman and show 100% concordance between the
+              previously reported mitochondrial genome sequence and the consensus sequence
+              generated from our genomic data. We present indications for recent common ancestry
+              between the Iceman and present-day inhabitants of the Tyrrhenian Sea, that the
+              Iceman probably had brown eyes, belonged to blood group O and was lactose intolerant.
+              His genetic predisposition shows an increased risk for coronary heart disease and
+              may have contributed to the development of previously reported vascular
+              calcifications. Sequences corresponding to ∼60% of the genome of
+              <em>Borrelia burgdorferi</em> are indicative of the earliest human case of infection
+              with the pathogen for Lyme borreliosis.
+            </p>
+          </details>
+        </div>
+
+        <div class="entry">
+          <!-- Title -->
+          <span style="font-size:1.3em;">
+            <strong>
+              New radiological insights into the life and death of the Tyrolean Iceman
+            </strong>
+          </span>
+
+          <br>
+
+          <!-- Journal -->
+          <a href="https://doi.org/10.1016/j.jas.2011.08.003" target="_blank">
+            <span style="font-size:1.15em; font-weight:700;">
+              Journal of Archaeological Science 38, 3425–3431
+            </span>
+          </a>
+
+          <br>
+
+          <!-- Image -->
+          <div style="margin:14px 0 16px;">
+            <a href="https://doi.org/10.1016/j.jas.2011.08.003" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanrecon.jpg"
+                alt="Radiological reconstruction of the Tyrolean Iceman"
+                style="
+                  max-width:100%;
+                  width:560px;
+                  border-radius:12px;
+                  border:1px solid rgba(0,0,0,0.15);
+                  display:block;
+                ">
+            </a>
+          </div>
+
+          <!-- Authors -->
+          Paul Gostner, Peter Pernter, Guido Bonatti,
+          <span style="font-weight:600;">Angela Graefen</span>,
+          Albert R. Zink (2011).
+
+          <!-- Optional abstract -->
+          <details style="margin-top:10px;">
+            <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+              Abstract
+            </summary>
+            <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+              The radiological examinations carried out on the Tyrolean Iceman (5300 B.P.) in Bolzano between 2001 and 2006 have undergone a new, systematic re-appraisal, during which new findings have been added to those already known beforehand. Until now, it has been assumed that the Iceman’s stomach was empty (due to the fact that this organ could not be localised), the colon contents constituting the Iceman’s last meal. During this re-appraisal, however, the stomach could not only be exactly identified, but was also found to be well-filled, shedding new light on the scenario leading to his violent death. In addition, several other novel aspects were observed: three gallbladder stones were found which, in combination with the previously identified atherosclerosis, indicate that the Iceman’s diet may have been richer in animal products than previous studies have suggested. The signs of enthesopathy in the knees indicate that he spent many hours wandering in the mountains. Several radio-opaque objects superficially embedded within the soft tissue were identified as being of taphonomic origin. The right humerus was found to be postmortally fractured.
+            </p>
+          </details>
+        </div>
+
+        <!-- (Everything below remains as you provided; I only corrected broken tags in the thesis section and removed duplicate </body>/<html>.) -->
+
+        <!-- Placeholder sections so the buttons work immediately -->
+        <h2 id="talks">Conference Presentations</h2>
+
+        <!-- ... your existing talk entries ... -->
+        <!-- (Kept unchanged for brevity in this message. Paste your remaining entries here exactly as you had them.) -->
+
+        <h2 id="chapters">Book Chapters</h2>
+        <!-- ... your existing chapter entries ... -->
+
+        <!-- Academic Theses -->
+        <h2 id="theses">Academic Theses</h2>
+
+        <div class="entry">
+          <!-- Title -->
+          <span style="font-size:1.3em;">
+            <strong>
+              Population genetic analysis of Neolithic to Bronze Age human remains from Trentino-Alto Adige (Northern Italy)
+            </strong>
+          </span>
+
+          <br>
+
+          <!-- Linked line only -->
+          <a href="http://doi.org/10.25358/openscience-3109" target="_blank">
+            <span style="font-size:1.15em; font-weight:700;">
+              Doctoral thesis – PhD Natural Sciences (Dr. rer. nat.)
+            </span>
+          </a>
+
+          <br>
+
+          <!-- Unlinked, smaller institutional details -->
+          <span style="font-size:0.95em; font-weight:400; color:#3f5f59;">
+            Institute for Organismic and Molecular Evolutionary Biology (iomE)<br>
+            Faculty of Biology<br>
+            Johannes Gutenberg University Mainz, Germany
+          </span>
+
+          <br>
+
+          <!-- Image -->
+          <div style="margin:14px 0 16px;">
+            <img
+              src="https://thegrayfin.github.io/bioarchaeology.de/images/thesis1.jpg"
+              alt="Thesis cover / figure"
+              style="
+                max-width:100%;
+                width:560px;
+                border-radius:12px;
+                border:1px solid rgba(0,0,0,0.15);
+                display:block;
+              ">
+          </div>
+
+          <!-- Advisers -->
+          Advisers:<br>
+          Prof. Dr. Joachim Burger,
+          <a href="https://palaeogenetics-mainz.de/" target="_blank">Palaeogenetics Group</a>,
+          Johannes Gutenberg University Mainz, Germany<br>
+          Prof. Dr. Albert Zink,
+          <a href="https://www.eurac.edu/en/institutes-centers/institute-for-mummy-studies" target="_blank">
+            EURAC Institute for Mummies and the Iceman
+          </a>,
+          Bolzano, Italy
+
+          <!-- Language summaries -->
+          <div style="margin-top:12px;">
+
+            <details style="margin-top:10px;">
+              <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+                Summary (English)
+              </summary>
+              <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+                xyz
+              </p>
+            </details>
+
+            <details style="margin-top:10px;">
+              <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+                Zusammenfassung (Deutsch)
+              </summary>
+              <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+                xyz
+              </p>
+            </details>
+
+            <details style="margin-top:10px;">
+              <summary style="cursor:pointer; color:#2f7f6f; font-size:0.95em;">
+                Riassunto (Italiano)
+              </summary>
+              <p style="margin-top:6px; font-size:0.95em; line-height:1.5;">
+                xyz
+              </p>
+            </details>
+
+          </div>
+        </div>
+
+        <h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a></p>
+
+        <footer>
+          © Dr. Angela Graefen
+        </footer>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>
