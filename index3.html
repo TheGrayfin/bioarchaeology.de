@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -64,20 +64,21 @@ i<!DOCTYPE html>
       padding: 34px 36px 38px;
     }
 
-    header{
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 22px;
+    /* UPDATED: wider, calmer header styling */
+    .site-header{
+      padding-bottom: 26px;
+      margin-bottom: 22px;
+      border-bottom: none; /* remove old line */
     }
 
-    header h1{
-      margin: 0 0 6px;
-      font-size: 2rem;
-      font-weight: 650;
-    }
-
-    header p{
-      margin: 0.3rem 0;
-      color: var(--muted);
+    .site-title{
+      font-size: 2.6rem;
+      font-weight: 500;       /* calmer, academic */
+      letter-spacing: 0.02em; /* subtle width */
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;  /* underline only under text */
     }
 
     /* Jump buttons */
@@ -126,56 +127,48 @@ i<!DOCTYPE html>
     }
 
     /* Intro card layout */
-.intro-grid{
-  display: grid;
-  grid-template-columns: 1fr 220px; /* text | image placeholder */
-  gap: 20px;
-  align-items: center;
-}
+    .intro-grid{
+      display: grid;
+      grid-template-columns: 1fr 220px; /* text | image placeholder */
+      gap: 20px;
+      align-items: center;
+    }
 
-.intro-image{
-  display: flex;
-  justify-content: center;
-}
+    .intro-image{
+      display: flex;
+      justify-content: center;
+    }
 
-.image-placeholder{
-  width: 100%;
-  height: 140px;
-  border: 2px dashed rgba(0,0,0,0.25);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-size: 0.9em;
-  background: rgba(255,255,255,0.6);
-}
+    /* Stack on small screens */
+    @media (max-width: 700px){
+      .intro-grid{
+        grid-template-columns: 1fr;
+      }
+    }
 
-/* Stack on small screens */
-@media (max-width: 700px){
-  .intro-grid{
-    grid-template-columns: 1fr;
-  }
-}
-/* Intro text styling */
-.intro-text p{
-  font-size: 1.05rem;        /* slightly larger than body text */
-  line-height: 1.55;         /* more air, better readability */
-  color: var(--ink);
-  margin: 0;
-}
+    /* Intro text styling – refined academic tone
+       NOTE: selector updated to match your new header class */
+    .site-header .intro-text p{
+      font-size: 1.22rem;
+      line-height: 1.75;
+      color: #245f54;          /* darker, calmer green than links */
+      font-style: italic;
+      font-weight: 450;        /* lighter than before */
+      letter-spacing: 0.01em;  /* subtle handwritten feel */
+      margin: 0;
+    }
 
-/* Optional: make it feel more "header-like" */
-.intro-text{
-  font-weight: 500;
-}
-.intro-image img {
-  width: 100%;
-  max-width: 280px;      /* adjust if you want it larger/smaller */
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
+    .intro-text{
+      font-weight: normal;
+    }
+
+    .intro-image img{
+      width: 100%;
+      max-width: 280px;      /* adjust if you want it larger/smaller */
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
 
   </style>
 </head>
@@ -184,11 +177,14 @@ i<!DOCTYPE html>
 <div class="wrap">
 <div class="panel">
 
-<header>
-  <h1>Dr. rer. nat. Angela Graefen</h1>
+<header class="site-header">
+  <h1 class="site-title">test77</h1>
 
-  <!-- Intro card (text + image placeholder) -->
-  <div class="entry intro-card" style="margin:16px 0 0;">
+
+
+
+  <!-- Intro card (text + image) -->
+  <div class="entry" style="margin:16px 0 0;">
     <div class="intro-grid">
 
       <!-- Text column -->
@@ -198,27 +194,23 @@ i<!DOCTYPE html>
           palaeogenetics, and mummy studies. Biological and medical perspectives
           provide a framework for examining disease, health, and mortality in
           prehistoric and historic populations and individuals, informed by
-          archaeological, biological, and historical evidence.
+          archaeological, biological, and historical evidence
         </p>
       </div>
 
-<!-- Image placeholder column -->
-<div class="intro-image">
-  <img
-    class="intro-photo"
-    src="https://thegrayfin.github.io/bioarchaeology.de/images/skull1.png"
-    alt="Image"
-  >
-</div>
-
-</div>
-
-
+      <!-- Image column -->
+      <div class="intro-image">
+        <img
+          class="intro-photo"
+          src="https://thegrayfin.github.io/bioarchaeology.de/images/skull1.png"
+          alt="Portrait"
+        >
+      </div>
 
     </div>
   </div>
 
-  <!-- Jump buttons (safe to add now) -->
+  <!-- Jump buttons -->
   <div class="jump">
     <a href="#publications">Publications</a>
     <a href="#talks">Conference Presentations</a>
@@ -226,8 +218,8 @@ i<!DOCTYPE html>
     <a href="#theses">Academic Theses</a>
     <a href="#contact">Contact</a>
   </div>
-
 </header>
+
 
 
 <main>
@@ -336,7 +328,7 @@ i<!DOCTYPE html>
   <div style="margin:14px 0 16px;">
     <a href="https://doi.org/10.1016/j.jas.2011.08.003" target="_blank">
       <img
-        src="https://raw.githubusercontent.com/TheGrayfin/bioarchaeology.de/main/icemanrecon.jpg"
+        src="https://thegrayfin.github.io/bioarchaeology.de/images/ice1.jpg"
         alt="Radiological reconstruction of the Tyrolean Iceman"
         style="
           max-width:100%;
@@ -993,7 +985,7 @@ i<!DOCTYPE html>
   <!-- Image -->
   <div style="margin:14px 0 16px;">
     <img
-      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies6.JPG"
+      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies9.png"
       alt="Exhibition volume Mumien - Mummies of the World"
       style="
         max-width:100%;
@@ -1038,7 +1030,7 @@ i<!DOCTYPE html>
   <!-- Image -->
   <div style="margin:14px 0 16px;">
     <img
-      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies5.JPG"
+      src="https://thegrayfin.github.io/bioarchaeology.de/images/mummies8.png"
       alt="Exhibition volume Mumien - Der Traum vom ewigen Leben"
       style="
         max-width:100%;
