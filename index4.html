@@ -139,19 +139,6 @@
       justify-content: center;
     }
 
-    .image-placeholder{
-      width: 100%;
-      height: 140px;
-      border: 2px dashed rgba(0,0,0,0.25);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.9em;
-      background: rgba(255,255,255,0.6);
-    }
-
     /* Stack on small screens */
     @media (max-width: 700px){
       .intro-grid{
@@ -159,23 +146,23 @@
       }
     }
 
-/* Intro text styling – refined academic tone */
-header .intro-text p{
-  font-size: 1.22rem;
-  line-height: 1.75;
-  color: #245f54;          /* darker, calmer green than links */
-  font-style: italic;
-  font-weight: 450;        /* lighter than before */
-  letter-spacing: 0.01em;  /* subtle handwritten feel */
-  margin: 0;
-}
+    /* Intro text styling – refined academic tone
+       NOTE: selector updated to match your new header class */
+    .site-header .intro-text p{
+      font-size: 1.22rem;
+      line-height: 1.75;
+      color: #245f54;          /* darker, calmer green than links */
+      font-style: italic;
+      font-weight: 450;        /* lighter than before */
+      letter-spacing: 0.01em;  /* subtle handwritten feel */
+      margin: 0;
+    }
 
-    /* Optional: make it feel more "header-like" */
     .intro-text{
       font-weight: normal;
     }
 
-    .intro-image img {
+    .intro-image img{
       width: 100%;
       max-width: 280px;      /* adjust if you want it larger/smaller */
       height: auto;
@@ -191,7 +178,8 @@ header .intro-text p{
 <div class="panel">
 
 <header class="site-header">
-  <h1 class="site-title">test55</h1>
+  <h1 class="site-title">test66</h1>
+
 
 
   <!-- Intro card (text + image) -->
