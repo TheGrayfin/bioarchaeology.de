@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="google-site-verification" content="WdnTqQhF3-4OhNWx1x3jKC_1oJkkSMDz_hNVRjXp8SE" />
-  <title>Dr. Angela Graefen - Bioarchaeology - Palaeopathology</title>
+  <title>Dr. Angela Graefen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Index -->
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow">
+  <!-- Prevent indexing while under construction -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
 
   <meta name="description" content="Dr. Angela Graefen, bioarchaeology, palaeopathology, mummy studies, publications, palaeogenetics">
 
@@ -72,15 +71,19 @@
       border-bottom: none; /* remove old line */
     }
 
-    .site-title{
-      font-size: 2.6rem;
-      font-weight: 500;       /* calmer, academic */
-      letter-spacing: 0.02em; /* subtle width */
-      margin: 0;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;  /* underline only under text */
-    }
+.site-title{
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.6rem;        /* reduced to avoid line breaks */
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+ 
+  color: #245f54; 
+}
 
     /* Jump buttons */
     .jump{
@@ -90,12 +93,13 @@
       gap: 10px;
     }
     .jump a{
-      padding: 8px 14px;
+      padding: 9px 18px;
       border-radius: 999px;
       background: rgba(47,127,111,.12);
       border: 1px solid rgba(47,127,111,.28);
       color: #1f4d46;
       font-weight: 650;
+      font-size: 1.05rem;  
       text-decoration: none;
     }
     .jump a:hover{ text-decoration: underline; }
@@ -104,7 +108,7 @@
 
     h2{
       margin-top: 32px;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 650;
       border-bottom: 1px solid var(--line);
       padding-bottom: 6px;
@@ -147,9 +151,10 @@
       }
     }
 
-    /* Intro text styling – refined academic tone
+    /* Intro text styling – refined academic 
        NOTE: selector updated to match your new header class */
     .site-header .intro-text p{
+      font-family: "Georgia", "Times New Roman", serif; 
       font-size: 1.22rem;
       line-height: 1.75;
       color: #245f54;          /* darker, calmer green than links */
@@ -179,7 +184,7 @@
 <div class="panel">
 
 <header class="site-header">
-  <h1 class="site-title">Dr. Angela Graefen</h1>
+  <h1 class="site-title">Dr. Angela Graefen - Bioarchaeology - Palaeopathology - Palaeogenetics</h1>
 
 
 
@@ -194,7 +199,7 @@
           palaeogenetics, and mummy studies. Biological and medical perspectives
           provide a framework for examining disease, health, and mortality in
           prehistoric and historic populations and individuals, informed by
-          archaeological, biological, and historical evidence
+          archaeological, biological, and historical evidence.
         </p>
       </div>
 
@@ -1158,16 +1163,20 @@ Mitochondriale Linien, die mit der mesolithischen Bevölkerung Europas assoziier
 
 <footer>
   © Dr. Angela Graefen
+  <br><br>
+  Foundational member of
+  <br>
+  <img
+    src="https://www.bioarchaeology.de/images/wmss.jpeg"
+    alt="WMSS logo"
+    style="margin-top:10px; max-width:220px; width:100%; height:auto; border-radius:10px; border:1px solid rgba(0,0,0,0.15);"
+  >
 </footer>
 
 </main>
 </div>
 </div>
 
-
-
-</body>
-</html>
 
 
 </body>
