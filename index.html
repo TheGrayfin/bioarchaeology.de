@@ -86,22 +86,26 @@
 }
 
     /* Jump buttons */
-    .jump{
-      margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .jump a{
-      padding: 9px 18px;
-      border-radius: 999px;
-      background: rgba(47,127,111,.12);
-      border: 1px solid rgba(47,127,111,.28);
-      color: #1f4d46;
-      font-weight: 650;
-      font-size: 1.05rem;  
-      text-decoration: none;
-    }
+.jump{
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: nowrap;          /* prevent wrapping */
+  justify-content: space-between; /* spread evenly */
+  gap: 8px;                   /* smaller gap */
+}
+.jump a{
+  flex: 1;                    /* all buttons same width */
+  text-align: center;         /* center text */
+  padding: 7px 10px;          /* reduced padding */
+  border-radius: 999px;
+  background: rgba(47,127,111,.12);
+  border: 1px solid rgba(47,127,111,.28);
+  color: #1f4d46;
+  font-weight: 600;
+  font-size: 0.95rem;         /* slightly smaller text */
+  text-decoration: none;
+  white-space: nowrap;        /* prevent text breaking */
+}
     .jump a:hover{ text-decoration: underline; }
 
     main{ margin-top: 22px; }
@@ -221,6 +225,7 @@
     <a href="#talks">Conference Presentations</a>
     <a href="#chapters">Book Chapters</a>
     <a href="#theses">Academic Theses</a>
+    <a href="#other">Other</a>
     <a href="#contact">Contact</a>
   </div>
 </header>
@@ -1158,6 +1163,20 @@ Mitochondriale Linien, die mit der mesolithischen Bevölkerung Europas assoziier
 
 
 </div>
+
+<!-- Other research involvement -->
+<h2 id="other">Other research involvement (selection)</h2>
+<div class="entry">
+  <ul style="margin: 0; padding-left: 1.2em;">
+    <li>Mummies of the "Catacombe dei Cappuccini" in Palermo (palaeopathological and conservational analyses)</li>
+    <li>Bog body "Lady of Peiting" (palaeogenetic analysis to gain insights into possible ethnic origin) </li>
+    <li>Fallen WWI "Kaiserjäger" soldiers from Italian Alps (palaeogenetic analyses to identify possible living relatives)</li>
+    <li>Iron Age Scythian skeletons of the Altai (palaeogenetic analyses to determine ethnic origins)</li>
+    <li>Early Medieval burials of Eppan-Gand (palaeopathological analyses)</li>
+    
+  </ul>
+</div>
+
   <h2 id="contact">Contact</h2>
 <p>Email: <a href="mailto:info@bioarchaeology.de">info@bioarchaeology.de</a></p>
 
