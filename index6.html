@@ -86,22 +86,26 @@
 }
 
     /* Jump buttons */
-    .jump{
-      margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .jump a{
-      padding: 9px 18px;
-      border-radius: 999px;
-      background: rgba(47,127,111,.12);
-      border: 1px solid rgba(47,127,111,.28);
-      color: #1f4d46;
-      font-weight: 650;
-      font-size: 1.05rem;  
-      text-decoration: none;
-    }
+.jump{
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: nowrap;          /* prevent wrapping */
+  justify-content: space-between; /* spread evenly */
+  gap: 8px;                   /* smaller gap */
+}
+.jump a{
+  flex: 1;                    /* all buttons same width */
+  text-align: center;         /* center text */
+  padding: 7px 10px;          /* reduced padding */
+  border-radius: 999px;
+  background: rgba(47,127,111,.12);
+  border: 1px solid rgba(47,127,111,.28);
+  color: #1f4d46;
+  font-weight: 600;
+  font-size: 0.95rem;         /* slightly smaller text */
+  text-decoration: none;
+  white-space: nowrap;        /* prevent text breaking */
+}
     .jump a:hover{ text-decoration: underline; }
 
     main{ margin-top: 22px; }
